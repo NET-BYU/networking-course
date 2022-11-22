@@ -237,7 +237,7 @@ Since this is such a complicated program, it might be helpful to give you an ove
 
 - Your program must have the usage pattern provided above and parse all of the options and arguments correctly.
 
-- The default port must be `8088`, and the default hostname must be `localhost`.
+- The default port must be `8088`.
 
 - Your application must print the response to `stdout`. All other class norms must be followed (e.g., print errors to `stderr`, correct return codes, etc.).
 
