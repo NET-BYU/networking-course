@@ -18,7 +18,7 @@ Use the GitHub Classroom link posted in the Slack channel for the lab to accept 
 
 You will be implementing a simplified version of a BitTorrent peer, called NibbleTorrent. NibbleTorrent is a peer-to-peer protocol, just like BitTorrent, but without the [Bencoded data](https://en.wikipedia.org/wiki/Bencode) and simplified interactions between peers. You will be downloading files using the following procedure:
 
-1. Get a torrent file and parse it. You can download them here.
+1. Get a torrent file and parse it. You can download a bunch of them [here]({% link assets/torrents.zip %}).
    
 2. Make a request to the tracker (listed in the torrent file) to get a list of peers that are seeding that file. I am providing the tracker. By making a request to the tracker, you are adding yourself as a peer for that torrent.
    
@@ -145,18 +145,25 @@ The peer you right must be able to **send and receive** all NibbleTorrent reques
 
 ##### Hello Request/Response
 
-After you connected to a peer, you will send them a hello request, with the type field value of `0x01`. This request will ensure that you both are using the same protocol and that the peer actually has the file that you are trying to download. The payload of the request is the torrent ID in binary format. For example, a request might look like this (displayed in hex format):
+After you connected to a peer, you will send them a hello request, with the type field value of `0x01`. This request will ensure that you both are using the same protocol and that the peer actually has the file that you are trying to download. The payload of the request is the torrent ID in **binary format**. For example, a request might look like this (displayed in hex format):
 
 ```
 01 01 00 14 84 e1 99 ca d6 b9 53 ee e0 c9 b6 d8 b7 26 12 dd b2 48 89 99
+ ^  ^     ^ ^
+ |  |     | start of message, which is the torrent ID (20 bytes long)
+ |  |     message length (20 in decimal, 0x14 in hex)
+ |  message type
+ version
 ```
 
-The peer will respond with a hello response (`0x02`) and list all of the pieces it has of the file, formatted as a bitfield. A bitfield allows a peer to efficiently encode what pieces it already has. A bitfield is like an array of booleans, where the index in the array corresponds to a piece of the file, and the value tells you if they have the piece or not. For example, if a file was broken into 4 pieces and a peer only had piece 1 and 3, then its bitfield would be `b1010`. If it had only the last piece of the file, then the bitfield would be `b0001`. If a bitfield is not an whole number of bytes, then pad the bitfield with zeros.
+The peer will respond with a hello response (`0x02`) and list all of the pieces it has of the file, formatted as a [bitfield](https://wiki.theory.org/BitTorrentSpecification#bitfield:_.3Clen.3D0001.2BX.3E.3Cid.3D5.3E.3Cbitfield.3E). A bitfield allows a peer to efficiently encode what pieces it already has. A bitfield is like an array of booleans, where the index in the array corresponds to a piece of the file, and the value tells you if they have the piece or not. For example, if a file was broken into 4 pieces and a peer only had piece 1 and 3, then its bitfield would be `b1010`. The first bit from the left represents the first piece. If it had only the last piece of the file, then the bitfield would be `b0001`. If a bitfield is not an whole number of bytes, then pad the bitfield with zeros.
 
-Using the previous example (torrent ID 84e199cad6b953eee0c9b6d8b72612ddb2488999, which only has two pieces) and assuming the peer has all of the pieces of the file, then the response would look like (in hex format):
+Using the previous example (torrent ID `0800428c333c811ea3b6f7a0f01ee31c4ba75f85`, which only has 42 pieces) and assuming the peer has all of the pieces of the file, then the response would look like (in binary format):
 
 ```
-01 02 00 01 c0
+111111111111111111111111111111111111111111000000
+^                                         ^
+bits represent what pieces the peer has   padding
 ```
 
 ##### Piece Request/Response
@@ -213,8 +220,8 @@ optional arguments:
 
 Since this is such a complicated program, it might be helpful to give you an overall flow of the program:
 
-1. Start your peer by spawn the necessary threads.
-2. Download the file you need to download. To do this, you will need to periodically check with the tracker to get a list of peers.
+1. Start your peer by spawning the necessary threads. Your peer has three jobs, download, upload, and contact the tracker.
+2. Download the file you were asked to download based on the CLI. To do this, you will need a list of peers from the tracker. Periodically check with the tracker to get a fresh list of peers. Select peers and download chunks of the file from them.
 3. While you are downloading, you must also be able to upload data to other peers.
 4. Once the file has been downloaded, save it to the folder that was specified by the user.
 5. Continue to seed your data to other peers.
