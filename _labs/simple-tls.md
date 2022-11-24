@@ -90,7 +90,7 @@ You can use the `utils.mac` with the appropriate data and key to calculate this 
 
 ##### Data
 
-Assuming that the previous hash matches with the server's hash, the server will start sending data messages (0x05). Using TCP, data is "streamed" between two devices. However, this streaming abstraction starts breaking down when you need to integrity protect data. Message authentication codes (MAC) need to be used to verify the data has not been changed, but here do you but the MAC? At the end of the whole stream? Simple TLS (and TLS) deals with this by breaking the stream into chunks. These chunks are encrypted and integrity protected.
+Assuming that the previous hash matches with the server's hash, the server will start sending data messages (0x05). Using TCP, data is "streamed" between two devices. However, this streaming abstraction starts breaking down when you need to integrity protect data. Message authentication codes (MAC) need to be used to verify the data has not been changed, but where do you put the MAC? At the end of the whole stream? Simple TLS (and TLS) deals with this by breaking the stream into chunks. These chunks are encrypted and integrity protected.
 
 <figure class="image mx-auto" style="max-width: 700px">
   <img src="{% link assets/simple_tls_data.png %}" alt="How data is fragmented in Simple TLS.">
