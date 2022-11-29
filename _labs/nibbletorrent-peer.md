@@ -246,9 +246,9 @@ Since this is such a complicated program, it might be helpful to give you an ove
 
 - The default port must be `8088`.
 
-- Your application must print the response to `stdout`. All other class norms must be followed (e.g., print errors to `stderr`, correct return codes, etc.).
+- Your program must be able to download the file associated with the torrent file.
 
-- You must be able to upload and download data at the same time with other peers.
+- You must upload and download data at the same time with other peers.
 
 - You must support up to 5 concurrent connections with different peers.
 
