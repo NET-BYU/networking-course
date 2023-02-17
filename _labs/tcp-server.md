@@ -141,6 +141,8 @@ To submit your code, push it to your Github repository. Tag the commit you want 
 
 - [Packing and unpacking binary data in Python](https://docs.python.org/3/library/struct.html).
 
+- [Convert an integer into binary](https://docs.python.org/3/library/stdtypes.html#int.to_bytes).
+
 - [random](https://docs.python.org/3/library/random.html).
 
 - [Logging HOWTO](https://docs.python.org/3/howto/logging.html) and the [Logging interface](https://docs.python.org/3/library/logging.html).
