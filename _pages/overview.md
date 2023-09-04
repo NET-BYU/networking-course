@@ -44,7 +44,7 @@ There are nine labs, so each lab is worth 4.4% of your grade. There are five hom
 
 
 ## Communication
-All communication will be done over Slack. Slack is intended to be used for announcements, questions, and facilitate student communication. If you have a question, ask it on Slack so that everyone can benefit from seeing the question and answer. 
+All communication will be done over Teams. Teams is intended to be used for announcements, questions, and facilitate student communication. If you have a question, ask it on Teams so that everyone can benefit from seeing the question and answer. 
 
 ## Attendance and Participation
 This is a senior-level class, and I expect senior-level participation. I expect all students to attend every lecture and be engaged in the lecture. Asking and answering questions in class is essential. When you are in a lecture, I expect your attention, so students should not be on their phones or doing non-class related things on laptops.

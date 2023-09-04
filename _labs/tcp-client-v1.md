@@ -11,7 +11,7 @@ repo: https://github.com/byu-ecen426-classroom/tcp_client_v1.git
 
 ## GitHub Classroom
 
-Use the GitHub Classroom link posted in the Slack channel for the lab to accept the assignment.
+Use the GitHub Classroom link posted in the Teams channel for the lab to accept the assignment.
 
 
 ## Overview

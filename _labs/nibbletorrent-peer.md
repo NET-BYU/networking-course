@@ -11,7 +11,7 @@ repo: https://github.com/byu-ecen426-classroom/nibbletorrent-peer.git
 
 ## GitHub Classroom
 
-Use the GitHub Classroom link posted in the Slack channel for the lab to accept the assignment.
+Use the GitHub Classroom link posted in the Teams channel for the lab to accept the assignment.
 
 
 ## Overview
