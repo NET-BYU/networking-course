@@ -32,12 +32,13 @@ This is a networking class, so the major goal is to get you familiar with **netw
 
 ## Grade Breakdown
 
-| Component | % of Grade |
-| --------- | ---------- |
-| Labs      | 40         |
-| Homeworks | 15         |
-| Midterms  | 25         |
-| Final     | 20         |
+| Component     | % of Grade |
+| ------------- | ---------- |
+| Labs          | 40         |
+| Homeworks     | 15         |
+| Midterms      | 22         |
+| Final         | 20         |
+| Participation | 3          |
 
 There are nine labs, so each lab is worth 4.4% of your grade. There are five homeworks, so each homework is worth 3% of your grade.
 
