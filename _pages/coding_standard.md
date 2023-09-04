@@ -46,14 +46,15 @@ icon: fas fa-terminal
 ## Python Coding Standard
 
 ### 1. General
+* **1.1** You must use Python 3.10
 
-* **1.1** Your code, when submitted, must be in a finished form. You must not have any commented out lines of code.
+* **1.2** Your code, when submitted, must be in a finished form. You must not have any commented out lines of code.
 
-* **1.2** Avoid using repetitive sections of copied and pasted code in your programs.
+* **1.3** Avoid using repetitive sections of copied and pasted code in your programs.
 
-* **1.3** No external downloaded libraries are allowed, unless explicitly stated in the lab instructions. 
+* **1.4** No external downloaded libraries are allowed, unless explicitly stated in the lab instructions. 
 
-* **1.4** All code will be graded against the coding standard.
+* **1.5** All code will be graded against the coding standard.
 
 ### 2. Comments
 * **2.1** Comments must be _meaningful_. Make sure that your code completely describes your intent. If your code is unclear or does not completely describe what is going on, comment accordingly.
