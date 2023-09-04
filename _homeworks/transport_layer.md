@@ -13,7 +13,7 @@ wireshark_labs:
     - <a target="_blank" href="http://www-net.cs.umass.edu/wireshark-labs/Wireshark_TCP_v8.0.pdf">TCP</a>
     - <a target="_blank" href="http://www-net.cs.umass.edu/wireshark-labs/Wireshark_UDP_v8.0.pdf">UDP</a>
 problems:
-    - question: Did you do the [TCP](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_TCP_v8.0.pdf) and [UDP](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_UDP_v8.0.pdf) Wireshark labs?
+    - question: Did you do spend at least 30 minutes on the [TCP](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_TCP_v8.0.pdf) and [UDP](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_UDP_v8.0.pdf) Wireshark labs?
     
     - question:
       parts: 

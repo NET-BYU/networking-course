@@ -4,7 +4,7 @@ title: Link Layer
 chapter: 6
 icon: link-layer.svg
 problems:
-    - question: Did you do the [Ethernet and ARP](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_Ethernet_ARP_v8.0.pdf) Wireshark lab?
+    - question: Did you do spend at least 30 minutes on the [Ethernet and ARP](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_Ethernet_ARP_v8.0.pdf) Wireshark lab?
 
     - question: Read about ARP spoofing [online](https://en.wikipedia.org/wiki/ARP_spoofing).
       parts:

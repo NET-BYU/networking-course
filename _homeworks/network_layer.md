@@ -4,7 +4,7 @@ title: Network Layer
 chapter: 4
 icon: network-layer.svg
 problems:
-    - question: Did you do the [IP](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_IP_v8.0.pdf) Wireshark lab?
+    - question: Did you do spend at least 30 minutes on the [IP](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_IP_v8.0.pdf) Wireshark lab?
     - question: Consider a datagram network using 8-bit host addresses. Suppose a router uses longest-prefix matching with the above forwarding table. Suppose a datagram arrives at the router, with the following destination addresses. Specify which interface will the datagram be forwarded using longest-prefix matching.
       image: /426/assets/longest_prefix.png
       parts: 

@@ -4,7 +4,7 @@ title: Application Layer
 chapter: 2
 icon: application-layer.svg
 problems:
-    - question: Did you do the [HTTP](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_HTTP_v8.0.pdf) Wireshark lab?
+    - question: Did you do spend at least 30 minutes on the [HTTP](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_HTTP_v8.0.pdf) Wireshark lab?
     - question: Suppose you and four of your friends are trying to load the same webpage. 
       parts:
         - You decide to open multiple parallel non-persistent HTTP connections. Will this help you load the webpage more quickly than your friends? Why or why not?

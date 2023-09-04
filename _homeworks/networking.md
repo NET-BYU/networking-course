@@ -4,7 +4,7 @@ title: Networking
 chapter: 1
 icon: networking.svg
 problems:
-  - question: Did you do the [Getting Started](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_Intro_v8.0.pdf) Wireshark lab?
+  - question: Did you do spend at least 30 minutes on the [Getting Started](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_Intro_v8.0.pdf) Wireshark lab?
   
   - question: What are the benefits and drawbacks of using packet-switching vs circuit switching?
   
