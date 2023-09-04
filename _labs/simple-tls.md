@@ -1,7 +1,7 @@
 ---
-title: Simple TLS
+title: Simple TLS Client
 number: 8
-repo: https://github.com/byu-ecen426-classroom/simple_tls.git
+repo: https://github.com/byu-ecen426-classroom/simple_tls_client.git
 ---
 
 > It's hard enough to find an error in your code when you're looking for it; it's even harder when you've assumed your code is error-free.
