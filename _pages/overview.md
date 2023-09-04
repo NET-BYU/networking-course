@@ -50,7 +50,7 @@ All communication will be done over Teams. Teams is intended to be used for anno
 This is a senior-level class, and I expect senior-level participation. I expect all students to attend every lecture and be engaged in the lecture. Asking and answering questions in class is essential. When you are in a lecture, I expect your attention, so students should not be on their phones or doing non-class related things on laptops.
 
 ## Late Policy
-Don't be late. For all homework assignments, 20% of the grade will be subtracted for each day late, not including weekends. There is no grade penalty for late labs, but if you get too far behind, it will be hard to catch up. For any lab turned in late, I can not guarantee when I will grade it, so any mistake you make in a earlier lab might be compounded over multiple labs. Just don't turn them in late!
+Don't be late. 20% of the assignment grade will be subtracted for each day late, *not* including weekends.
 
 ## Source Code Sharing
 No source code should be shared between students. Students can work on assignments together, but no direct or indirect copying from another student is allowed. This class will use a code similarity checker to determine if students are copying code.
