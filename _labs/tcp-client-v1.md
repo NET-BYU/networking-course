@@ -39,15 +39,7 @@ dlroW olleH
 
 ### Command-line Interface (CLI)
 
-To use your protocol, you will be building a command-line tool that accepts different options and arguments. Here is a video of the program running:
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pdnJnOV6zqI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div class="alert alert-warning" style="width: 560px" role="alert">
-  Warning: This video is for an older version of the lab. The functionality will be the same, but some of the specifics might be slightly different.
-</div>
-
-Your program must be able to accept a port and hostname as an option. For arguments, your program must be able to accept an action and a message.
+To use your protocol, you will be building a command-line tool that accepts different options and arguments. Your program must be able to accept a port and hostname as an option. For arguments, your program must be able to accept an action and a message.
 
 To follow standard Unix norms, you must be careful what gets printed out to `stdout` and `stderr`. `stdout` is for the main output of your program and should be safe to pass to another program (using the pipe `|` operator). `stderr` is for all other output (errors and debugging).
 
@@ -113,7 +105,7 @@ nc -l 8080
 
 You can have your client connect to the server and see what is being received. You can also type a message into `netcat` as a response to your client.
 
-I will also be running a TCP server at `lundrigan.byu.edu:8080`. This server is only accessible on campus (for security purposes). If you are off-campus, you will need to VPN or use [SSH port forwarding](https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding) to test against it. Using the College's VPN is the easier approach, however, here is a video demonstrating how to using port forwarding to test out lab 1:
+I will also be running a TCP server at `lundrigan.byu.edu:8080`. This server is only accessible on campus (for security purposes). If you are off-campus, you will need to VPN or use [SSH port forwarding](https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding) to test against it. Using the College's VPN is the easier approach. If for some reason you can't use the VPN, here is a video demonstrating how to using port forwarding to test out lab 1:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Kfmsi_WCd74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

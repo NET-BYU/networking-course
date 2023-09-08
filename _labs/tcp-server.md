@@ -65,14 +65,6 @@ The CLI will have no arguments and three options: port, verbose flag, and help f
 
 Your server will be designed to block forever. Once it has handled one client, it will wait for another client to connect. As a result, you must be able to properly handle an [interrupt signal (`SIGINT`)](https://en.wikipedia.org/wiki/Signal_(IPC)). A process is usually sent this signal by typing `ctrl-c` in a terminal window. Your server must catch this signal and properly shutdown the server.
 
-Here is a video of the program running:
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Udl4iCAU9MU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div class="alert alert-warning" style="width: 560px" role="alert">
-  Warning: This video is for an older version of the lab. The functionality will be the same, but some of the specifics might be slightly different.
-</div>
-
 ### Logging
 
 Like the previous labs, I strongly encourage you to use logging to help debug your program and understand its flow. Python provides a powerful [logging library](https://docs.python.org/3/howto/logging.html). Spend some time learning it and it will pay off later.

@@ -23,14 +23,6 @@ As part of writing a well behaving server, you will need to appropriately handle
 
 Assuming you did the previous lab correctly, you shouldn't have to change any of your HTTP parsing code.
 
-Here is a demonstration of the server:
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dnDi3XXLFpE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div class="alert alert-warning" style="width: 560px" role="alert">
-  Warning: This video is for an older version of the lab. The functionality will be the same, but some of the specifics might be slightly different.
-</div>
-
 ### Command-line Interface (CLI)
 
 To control whether you are using processes or threads, we need to modify the CLI of your program. Add a new flag option, called `-c`/`--concurrency`. It takes a string which controls which concurrency technique you are using. The complete CLI will look like

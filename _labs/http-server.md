@@ -32,16 +32,7 @@ Only two modifications need to be made to the CLI of your server from the previo
 python http_server.py -f ./www
 ```
 
-Then all requests would be relative to the `www` folder. The previous request would try to access a file at `www/test.jpg`. The second change you need to make is adding a `--delay` flag. This flag needs to purposely delay the handling of a HTTP request for 5 seconds. This flag is purely to help with testing your code and has no real-world benefit. 
-
-Here is a demonstration of the server:
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kO3OcsUKtgQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div class="alert alert-warning" style="width: 560px" role="alert">
-  Warning: This video is for an older version of the lab. The functionality will be the same, but some of the specifics might be slightly different.
-</div>
-
+Then all requests would be relative to the `www` folder. The previous request would try to access a file at `www/test.jpg`. The second change you need to make is adding a `--delay` flag. This flag needs to purposely delay the handling of a HTTP request for 5 seconds. This flag is purely to help with testing your code and has no real-world benefit.
 
 ## Objectives
 

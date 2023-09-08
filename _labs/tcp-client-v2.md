@@ -72,15 +72,6 @@ cat input.txt | ./tcp_client -
 
 You could imagine more interesting ways of chaining commands together. 
 
-Here is a video of the program running:
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/V_jFzM07lio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div class="alert alert-warning" style="width: 560px" role="alert">
-  Warning: This video is for an older version of the lab. The functionality will be the same, but some of the specifics might be slightly different.
-</div>
-
-
 ## Objectives
 
 - Learn to read from a file and `stdin`.

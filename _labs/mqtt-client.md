@@ -55,14 +55,6 @@ optional arguments:
 
 **Note**: The usage pattern can differ slightly depending on the language and library you use to implement the argument parsing, but the general meaning of the usuage pattern should be the same.
 
-Here is a demonstration of the client:
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vcE0FdQGQB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div class="alert alert-warning" style="width: 560px" role="alert">
-  Warning: This video is for an older version of the lab. The functionality will be the same, but some of the specifics might be slightly different.
-</div>
-
 ## Objectives
 
 - Learn MQTT and how to use it.
