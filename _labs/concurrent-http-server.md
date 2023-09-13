@@ -17,7 +17,7 @@ Use the GitHub Classroom link posted in the Teams channel for the lab to accept 
 
 For this lab, you will be extending your HTTP server to handle multiple clients _at once_. The rest of your server will stay the same. There are multiple ways of supporting multiple clients. A typical approach is to spawn a new thread or process for each client that connects. That thread or process is responsible for communicating with a specific client. There is another approach that uses a system call (`poll` or `select`) to determine which sockets are ready to receive data from or write data to. Since with socket programming, most of the time your program is waiting around for the sockets to send or receive data, this allows your program to handle multiple sockets at once. Instead of creating a new thread or process for each client socket, one process keeps track of many sockets at once.
 
-For this lab, you are required to implement a concurrent server in two ways: using threads and using processes. When a new request comes in, a thread/process is created and the socket is passed to that thread/process. The newly spawned thread/process is now responsible for receiving and sending data while the main thread is still accepting new clients. As mentioned in lecture, thread/process have their own set of issues, largely shared memory. To limit these issues, try to use local variables as much as possible. You should not need to use mutex/locks in this lab! For extra credit, you can also implement a thread pool, process pool, and using Python's [Asynchronous I/O](https://docs.python.org/3/library/asyncio.html) library.
+For this lab, you are required to implement a concurrent server in two ways: using threads and using a thread pool. Using standard threads, when a new request comes in, a thread is created and the socket is passed to that thread. The newly spawned thread is now responsible for receiving and sending data while the main thread is still accepting new clients. With a thread pool, you create a bunch of threads before starting your server and hand tasks (i.e., new clients) to threads that are idle. As mentioned in lecture, threads have their own set of issues, largely shared memory. To limit these issues, try to use local variables as much as possible. You should not need to use mutex/locks in this lab! For extra credit, you can also implement your sever using Python's [Asynchronous I/O](https://docs.python.org/3/library/asyncio.html) library.
 
 As part of writing a well behaving server, you will need to appropriately handle the threads when you are exiting (the user hits `ctrl-c`). This allows your server to finishing handling clients that have already connected before shutting down the server. To do this, you must join all spawned threads.
 
@@ -37,11 +37,11 @@ optional arguments:
   -d, --delay           Add a delay for debugging purposes.
   -f FOLDER, --folder FOLDER
                         Folder from where to serve from.
-  -c {thread,thread-pool,process,process-pool,async}, --concurrency {thread,thread-pool,process,process-pool,async}
+  -c {thread,thread-pool,async}, --concurrency {thread,thread-pool,async}
                         Concurrency methodology.
 ```
 
-Only `thread` and `process` are required in this lab. The rest of the concurrency techniques are extra credit.
+Only `thread` and `thread-pool` are required in this lab. The `async` option extra credit.
 
 ### Benchmarking
 
@@ -64,11 +64,11 @@ Run the benchmark **3 or more times** and report the best run. You should turn o
 
 ## Requirements
 
-- You must be able to handle multiple concurrent clients at once using threads and processes.
+- You must be able to handle multiple concurrent clients at once using threads and a thread pool.
 
-- You can only use the low-level [threading.Thread](https://docs.python.org/3/library/threading.html#thread-objects) and [multiprocessing.Process](https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process) objects. All high-level concurrency libraries like [concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html) is not allowed.
+- You can only use the low-level [threading.Thread](https://docs.python.org/3/library/threading.html#thread-objects) objects. All high-level concurrency libraries like [concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html) is not allowed. Python has implementations of thread pools, but you must implement these yourself to get the credit.
 
-- Add the `-c`/`--concurrency` flags to your program. You only need to support `thread` and `process`. If the concurrency flag is not provided, the default value should be `thread`. 
+- Add the `-c`/`--concurrency` flags to your program. You only need to support `thread` and `thread-pool`. If the concurrency flag is not provided, the default value should be `thread`. 
 
 - You must gracefully shutdown your server, waiting for all client sockets to finish.
 
@@ -81,12 +81,7 @@ Run the benchmark **3 or more times** and report the best run. You should turn o
 
 ## Extra Credit
 
-For extra credit, you can implement and **benchmark** a thread pool, a process pool, and/or use the Async I/O library in Python. Python has implementations of thread pools and process pools, but you must implement these yourself to get the credit. For the Async I/O, you will need to import the [asyncio](https://docs.python.org/3/library/asyncio.html) module.
-
-- Thread Pool: 5%
-- Process Pool: 5%
-- Async I/O: 5%
- 
+For extra credit, you can implement and **benchmark** your server using the Async I/O library in Python. For the Async I/O, you will need to import the [asyncio](https://docs.python.org/3/library/asyncio.html) module. This will require you to reimplement your code using the `async` and `await` key words since async code and sync code can't mix. You will receive 5% extra credit.
 
 ## Testing
 
@@ -106,7 +101,4 @@ To submit your code, push it to your Github repository. Tag the commit you want 
 
 - [Python Threads](https://docs.python.org/3/library/threading.html)
 
-- [Python Processes](https://docs.python.org/3/library/multiprocessing.html)
-
-- Ignore ctrl-c on a process: `signal.signal(signal.SIGINT, SIG_IGN)`
-  
+- [Python Queue (good for coordinating between threads)](https://docs.python.org/3.10/library/queue.html)
