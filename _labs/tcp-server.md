@@ -108,7 +108,7 @@ Options:
 
 - Return "error" (with the appropriate header) if an error occurs when processing a request, such as an invalid action.
 
-- If a client does not send enough data (e.g., the length is 10 but they only send 4 bytes), your server is allowed to block waiting for the remaining bytes of data.
+- If a client does not send enough data (e.g., the length is 10 but they only send 4 bytes), your server should block and wait for the remaining bytes of data. Otherwise, your server may not work when handling large amounts of data.
 
 - Properly shutdown server when an interrupt signal (`ctrl-c`) is sent to your process. If your server is in the middle of sending/receiving to a client, you can let that finish before stopping the server.
 
