@@ -18,8 +18,8 @@ problems:
         - Assuming zero transmission time for the HTML object, how much time (in ms) elapses from when the client clicks on the link until the client receives the object?
         - Now suppose the HTML object references 2 very small objects on the same server. Neglecting transmission times, how much time (in ms) elapses from when the client clicks on the link until the base object and all 2 additional objects are received from web server at the client, assuming non-persistent HTTP and no parallel TCP connections?
         - Suppose the HTML object references 2 very small objects on the same server, but assume that the client is configured to support a maximum of 5 parallel TCP connections, with non-persistent HTTP.
-        - Suppose the HTML object references 2 very small objects on the same server, but assume that the client is configured to support a maximum of 5 parallel TCP connections, with persistent HTTP.
-        - "What's the fastest method we've explored: Nonpersistent-serial, Nonpersistent-parallel, or Persistent-parallel?"
+        - Suppose the HTML object references 2 very small objects on the same server, but assume that the client is configured to support persistent HTTP.
+        - "What's the fastest method we've explored: Nonpersistent-serial, Nonpersistent-parallel, or Persistent?"
   
     - question: How does SMTP mark the end of a message body? How about HTTP? Can HTTP use the same method as SMTP to mark the end of a message body? Explain.
     
