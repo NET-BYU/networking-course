@@ -13,6 +13,9 @@ repo: https://github.com/byu-ecen426-classroom/simple_tls_client.git
 
 Use the GitHub Classroom link posted in the Teams channel for the lab to accept the assignment.
 
+## Historical Time Spent on Lab
+
+![]({% link assets/lab_times/{{ page.title }}.svg %})
 
 ## Overview
 

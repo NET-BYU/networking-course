@@ -12,8 +12,12 @@ repo: https://github.com/byu-ecen426-classroom/tcp_client_v2.git
 
 Use the GitHub Classroom link posted in the Teams channel for the lab to accept the assignment.
 
+## Historical Time Spent on Lab
+
+![]({% link assets/lab_times/{{ page.title }}.svg %})
 
 ## Overview
+
 For this lab, you will be building off what you did in the previous lab. You will want to use your previous code as a starting point. We will be using the same protocol, but with a minor adjustment. The `Config` `struct` and `tcp_client.h` file have been modified to reflect these changes, so make sure to review these changes.
 
 This lab adds [pipelining](https://en.wikipedia.org/wiki/Pipeline_(computing)) to our protocol. In this context, pipelining is sending multiple requests in one TCP connection. In the previous lab, if you wanted to send multiple requests, you had to start a TCP connect for each request. This can be quite time consuming because of [TCP's three-way handshake](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Connection_establishment). Rather than starting a new TCP connection for each request, we can reuse the TCP socket and send multiple requests. To accommodate pipelining, both your command-line tool and our protocol will need to change. 
