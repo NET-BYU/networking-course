@@ -132,6 +132,8 @@ To submit your code, push it to your Github repository. Tag the commit you want 
 
 ## Resources
 
+- [Calculate length of string `sprintf` will generate](https://stackoverflow.com/questions/29087129/how-to-calculate-the-length-of-output-that-sprintf-will-generate)
+
 - [strchr](http://www.cplusplus.com/reference/cstring/strchr/)
 
 - Memory management
