@@ -128,7 +128,7 @@ At this point in the labs, you might have incurred some [technical debt](https:/
 
 - Use the binary version of the protocol.
 
-- Ensure that Valgrind reports no errors. Run Valgrind with the following options:
+- Ensure that Valgrind reports no errors. Don't run Valgrind from within the VSCode terminal window—it reports bad results. Run Valgrind with the following options:
 ```bash
 valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes bin/tcp_client ...
 ```
