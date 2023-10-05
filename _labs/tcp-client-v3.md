@@ -130,7 +130,7 @@ At this point in the labs, you might have incurred some [technical debt](https:/
 
 - Ensure that Valgrind reports no errors. Don't run Valgrind from within the VSCode terminal window—it reports bad results. You know you are good when you see the following output on the last line of the Valgrind report: `ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)`. Run Valgrind with the following options:
 ```bash
-valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes bin/tcp_client ...
+valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes bin/tcp_client
 ```
 
 
