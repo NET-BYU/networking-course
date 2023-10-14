@@ -93,12 +93,12 @@ Like the previous labs, I strongly encourage you to use logging to help debug yo
 - `tcp_server.py` accepts no arguments, and three options, as outlined above.
 
 ```
-Usage: tcp_server.py [--help] [-v] [-p PORT]
+usage: tcp_server.py [-h] [-p PORT] [-v]
 
-Options:
-  --help
-  -v, --verbose
-  --port PORT, -p PORT
+optional arguments:
+  -h, --help            show this help message and exit
+  -p PORT, --port PORT  port to bind to
+  -v, --verbose         turn on debugging output
 ```
 
 - The default port must be `8083`.

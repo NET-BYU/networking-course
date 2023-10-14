@@ -31,17 +31,17 @@ Assuming you did the previous lab correctly, you shouldn't have to change any of
 To control whether you are using processes or threads, we need to modify the CLI of your program. Add a new flag option, called `-c`/`--concurrency`. It takes a string which controls which concurrency technique you are using. The complete CLI will look like
 
 ```
-Usage: http_server.py [-h] [-p PORT] [-v] [-d] [-f FOLDER] [-c {thread,thread-pool,process,process-pool,async}]
+usage: http_server.py [-h] [-p PORT] [-v] [-d] [-f FOLDER] [-c {thread,thread-pool,async}]
 
 optional arguments:
   -h, --help            show this help message and exit
-  -p PORT, --port PORT  Port to bind to
-  -v, --verbose         Turn on debugging output.
-  -d, --delay           Add a delay for debugging purposes.
+  -p PORT, --port PORT  port to bind to
+  -v, --verbose         turn on debugging output
+  -d, --delay           add a delay for debugging purposes
   -f FOLDER, --folder FOLDER
-                        Folder from where to serve from.
+                        folder from where to serve from
   -c {thread,thread-pool,async}, --concurrency {thread,thread-pool,async}
-                        Concurrency methodology.
+                        concurrency methodology to use
 ```
 
 Only `thread` and `thread-pool` are required in this lab. The `async` option extra credit.

@@ -59,14 +59,15 @@ Then all requests would be relative to the `www` folder. The previous request wo
 - `http_server.py` accepts no arguments and five options:
 
 ```
-Usage: http_server [--help] [-v] [-d] [-p PORT] [-f FOLDER]
+usage: http_server.py [-h] [-p PORT] [-v] [-d] [-f FOLDER]
 
-Options:
-  --help
-  -v, --verbose
-  -d, --delay
-  --port PORT, -p PORT
-  --folder FOLDER, -f FOLDER
+optional arguments:
+  -h, --help            show this help message and exit
+  -p PORT, --port PORT  port to bind to
+  -v, --verbose         turn on debugging output
+  -d, --delay           add a delay for debugging purposes
+  -f FOLDER, --folder FOLDER
+                        folder from where to serve from
 ```
 
 - The default port must be `8084`.
