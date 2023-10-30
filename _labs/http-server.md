@@ -100,7 +100,7 @@ You can follow the same tools as the previous lab. You can also add [httpie](htt
 
 **Warning**: Chrome has a weird behavior where it will sometimes set up a TCP connection with your server but then not send anything. This TCP connection will cause your server to block, waiting for an HTTP request. I'm not sure why Chrome does this, but it is probably related to performance enhancements and anticipating another HTTP request might be sent. Either way, don't worry about this case since it is a Chrome-specific issue.
 
-**Warning**: When testing with httpie and sending binary files (like a large image), httpie will sometimes close the connection prematurely. This is because you are sending binary data and httpie ignores binary data (by default), it closes the connection early without receiving the full response. So if you aren’t able to send all of the data before httpie decides to close, you will get an error while sending the data.
+**Warning**: When testing with httpie or curl and sending binary files (like a large image), httpie will sometimes close the connection prematurely. This is because you are sending binary data and httpie ignores binary data (by default), it closes the connection early without receiving the full response. So if you aren’t able to send all of the data before httpie decides to close, you will get an error while sending the data.
 
 
 ## Submission
