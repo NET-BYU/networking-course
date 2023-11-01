@@ -17,24 +17,6 @@ Transfer/sec:    503.26KB
 Requests/sec:   1833.75
 Transfer/sec:      2.28MB
 
-## Processes
-
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.90s     2.17s   13.66s    65.09%
-    Req/Sec   602.44    182.83     0.93k    68.75%
-  192894 requests in 30.01s, 239.33MB read
-Requests/sec:   6426.85
-Transfer/sec:      7.97MB
-
-## Async
-
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     1.17ms  399.66us   4.91ms   69.05%
-    Req/Sec     1.05k    70.34     1.33k    91.52%
-  299994 requests in 30.00s, 372.21MB read
-Requests/sec:   9999.91
-Transfer/sec:     12.41MB
-
 ## Thread Pool
 
   Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -44,11 +26,11 @@ Transfer/sec:     12.41MB
 Requests/sec:   1793.59
 Transfer/sec:      2.23MB
 
-## Process Pool
+## Async
 
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     6.89s     1.17s    9.61s    65.97%
-    Req/Sec   794.77    167.74     1.02k    45.45%
-  210358 requests in 30.01s, 261.00MB read
-Requests/sec:   7010.63
-Transfer/sec:      8.70MB
+    Latency     1.17ms  399.66us   4.91ms   69.05%
+    Req/Sec     1.05k    70.34     1.33k    91.52%
+  299994 requests in 30.00s, 372.21MB read
+Requests/sec:   9999.91
+Transfer/sec:     12.41MB
