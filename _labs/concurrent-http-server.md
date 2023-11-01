@@ -84,7 +84,7 @@ Run the benchmark **3 or more times** and report the best run. You should turn o
 
 ## Extra Credit
 
-For extra credit, you can implement and **benchmark** your server using the Async I/O library in Python. For the Async I/O, you will need to import the [asyncio](https://docs.python.org/3/library/asyncio.html) module. This will require you to reimplement your code using the `async` and `await` key words since async code and sync code can't mix. You will receive 5% extra credit.
+For extra credit, you can implement and **benchmark** your server using the Async I/O library in Python. For the Async I/O, you will need to import the [asyncio](https://docs.python.org/3/library/asyncio.html) module. This will require you to reimplement your code using the `async` and `await` key words since async code and sync code can't mix. You will receive **15% extra credit** on this assignment.
 
 ## Testing
 
