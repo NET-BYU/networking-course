@@ -97,7 +97,6 @@ To submit your code, push it to your Github repository. Tag the commit you want 
 
 ## Resources
 
-- [argparse](https://docs.python.org/3/library/argparse.html)
 - [Paho MQTT Python client](https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php)
 - [Paho MQTT Python client publication example](https://github.com/eclipse/paho.mqtt.python/blob/master/examples/client_pub-wait.py)
 - [Paho MQTT Python client subscription example](https://github.com/eclipse/paho.mqtt.python/blob/master/examples/client_sub.py)
