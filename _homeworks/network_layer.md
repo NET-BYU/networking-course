@@ -32,6 +32,6 @@ problems:
         - Based on this observation, and assuming you can sniff all packets sent by the NAT to the outside, can you outline a simple technique that detects the number of unique hosts behind a NAT? Justify your answer.
         - If the identification numbers are not sequentially assigned but randomly assigned, would your technique work? Justify your answer.
 
-    - question: In this problem we'll explore the impact of NATs on P2P applications. Suppose a peer with username Arnold discovers through querying that a peer with username Bernard has a file it wants to download. Also suppose that Bernard and Arnold are both behind a NAT. Try to devise a technique that will allow Arnold to establish a TCP connection with Bernard without application-specific NAT configuration. If you have difficulty devising such a technique, discuss why.
+    - question: In this problem we'll explore the impact of NATs on P2P applications. Suppose a peer with username Arnold discovers through querying that a peer with username Bernard has a file it wants to download. Also suppose that Bernard and Arnold are both behind different NATs. Try to devise a technique that will allow Arnold to establish a TCP connection with Bernard without application-specific NAT configuration (e.g., logging into a router and setting up port forwarding). If you have difficulty devising such a technique, discuss why.
 ---
 
