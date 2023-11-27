@@ -143,7 +143,7 @@ Peers need to communicate with each other to request parts of a file. For this c
 
 - **Data**: This field is variable length. **Based on the type of message, you will interpret the data payload differently.**
 
-The peer you right must be able to **send and receive** all NibbleTorrent requests.
+The peer you write must be able to **send and receive** all NibbleTorrent requests.
 
 
 ##### Hello Request/Response
@@ -159,9 +159,9 @@ After you connected to a peer, you will send them a hello request, with the type
  version
 ```
 
-The peer will respond with a hello response (`0x02`) and list all of the pieces it has of the file, formatted as a [bitfield](https://wiki.theory.org/BitTorrentSpecification#bitfield:_.3Clen.3D0001.2BX.3E.3Cid.3D5.3E.3Cbitfield.3E). A bitfield allows a peer to efficiently encode what pieces it already has. A bitfield is like an array of booleans, where the index in the array corresponds to a piece of the file, and the value tells you if they have the piece or not. For example, if a file was broken into 4 pieces and a peer only had piece 1 and 3, then its bitfield would be `b1010`. The first bit from the left represents the first piece. If it had only the last piece of the file, then the bitfield would be `b0001`. If a bitfield is not an whole number of bytes, then pad the bitfield with zeros.
+The peer will respond with a hello response (`0x02`) and list all of the pieces it has of the file, formatted as a [bitfield](https://wiki.theory.org/BitTorrentSpecification#bitfield:_.3Clen.3D0001.2BX.3E.3Cid.3D5.3E.3Cbitfield.3E). A bitfield allows a peer to efficiently encode what pieces it already has. A bitfield is like an array of booleans, where the index in the array corresponds to a piece of the file, and the value tells you if they have the piece or not. For example, if a file consisted of 4 pieces and a peer only had pieces 1 and 3, then its bitfield would be `b1010`. The first bit from the left (MSB) represents the first piece. If it had only the last piece of the file, then the bitfield would be `b0001`. 
 
-Using the previous example (torrent ID `0800428c333c811ea3b6f7a0f01ee31c4ba75f85`, which only has 42 pieces) and assuming the peer has all of the pieces of the file, then the response would look like (in binary format):
+If a bitfield is not an whole number of bytes, then pad the bitfield with zeros. Using the previous example (torrent ID `0800428c333c811ea3b6f7a0f01ee31c4ba75f85`, which only has 42 pieces) and assuming the peer has all of the pieces of the file, then the response would look like (in binary format):
 
 ```
 111111111111111111111111111111111111111111000000
@@ -223,10 +223,14 @@ optional arguments:
 
 Since this is such a complicated program, it might be helpful to give you an overall flow of the program:
 
-1. Start your peer by spawning the necessary threads. Your peer has three jobs, download, upload, and contact the tracker.
+1. Your peer has three jobs, download, upload, and contact the tracker that need to be done all in parallel. Start your peer by spawning the necessary threads for each task.
+  
 2. Download the file you were asked to download based on the CLI. To do this, you will need a list of peers from the tracker. Periodically check with the tracker to get a fresh list of peers. Select peers and download chunks of the file from them.
+
 3. While you are downloading, you must also be able to upload data to other peers.
+
 4. Once the file has been downloaded, save it to the folder that was specified by the user.
+
 5. Continue to seed your data to other peers.
 
 
