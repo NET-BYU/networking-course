@@ -113,12 +113,7 @@ Now that you have a list of peers, you are ready to make a connection with them 
    
 3. Request pieces of the file from the peer.
 
-You need to be able to support up to **5 concurrent connections with different peers**, requesting different parts of of the file. Here is a diagram to roughly outline the algorithm for connecting to peers and requesting pieces of the file:
-
-<figure class="image mx-auto" style="max-width: 500px">
-  <img src="{% link assets/nibble_torrent_request_algorithm.png %}" alt="NibbleTorrent Request Algorithm">
-  <figcaption style="text-align: center;">Figure adapted from <a href="https://blog.jse.li/posts/torrent/">here</a>.</figcaption>
-</figure>
+You need to be able to support up to **5 concurrent connections with different peers**, requesting different parts of of the file.
 
 #### NibbleTorrent Request/Response Format
 
@@ -232,6 +227,13 @@ Since this is such a complicated program, it might be helpful to give you an ove
 4. Once the file has been downloaded, save it to the folder that was specified by the user.
 
 5. Continue to seed your data to other peers.
+
+Here is a diagram showing the general interactions between the different components.
+
+<figure class="image mx-auto" style="max-width: 800px">
+  <img src="{% link assets/nibble_torrent_peer.png %}" alt="NibbleTorrent Peer">
+</figure>
+
 
 
 ## Objectives
