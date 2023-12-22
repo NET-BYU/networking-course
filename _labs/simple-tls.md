@@ -137,7 +137,7 @@ optional arguments:
 
 ## Requirements
 
-- You must use Python 3.8+.
+- You must use the same version of Python the Embedded Lab computers are using.
 
 - The only third-party Python library you are allowed to use in this lab is [cryptography](https://cryptography.io/en/latest/), and the two modules I am providing, `crypto_utils.py`, and `message.py`. You shouldn't have to use the cryptography library directly if you plan on using `crypto_utils.py` All other third-party libraries are off limits.
 

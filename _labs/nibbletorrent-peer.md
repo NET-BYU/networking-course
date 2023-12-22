@@ -245,7 +245,7 @@ Here is a diagram showing the general interactions between the different compone
 
 ## Requirements
 
-- You must use Python 3.8+.
+- You must use the same version of Python the Embedded Lab computers are using.
 
 - The only third-party Python library you are allowed to use in this lab is [requests](https://requests.readthedocs.io/en/latest/). That way you don't have to write your own HTTP client. All other third-party libraries are off limits.
 

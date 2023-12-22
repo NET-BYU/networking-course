@@ -82,7 +82,7 @@ Like the previous labs, I strongly encourage you to use logging to help debug yo
 
 ## Requirements
 
-- You must use Python 3.8+.
+- You must use the same version of Python the Embedded Lab computers are using.
 
 - You **can not use any third party Python libraries** for this lab. If you have to `pip install` or clone any repos, in order to import a library, stop. The only exception is the formatter, [Black](https://github.com/psf/black), which you have to `pip install`. However, you do not use it in your code. 
 
