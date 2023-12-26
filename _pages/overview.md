@@ -53,7 +53,7 @@ This is a senior-level class, and I expect senior-level participation. I expect 
 Don't be late. 20% of the assignment grade will be subtracted for each day late, *not* including weekends.
 
 ## Source Code Sharing
-No source code should be shared between students. Students can work on assignments together, but no direct or indirect copying from another student is allowed. This class will use a code similarity checker to determine if students are copying code.
+No source code should be shared between students. Students can work on assignments together, but no direct or indirect copying from another student is allowed. Students should not send their source code to other students to look at, even as a reference. This class will use a code similarity checker to determine if students are copying code. If it is determined that code was copied, both students will receive a zero for the assignment.
 
 ## Policies
 
