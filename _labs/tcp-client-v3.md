@@ -136,7 +136,7 @@ valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 
 
 ## Testing
 
-You can follow the same testing structure as lab 1 and 2. I will also be running a TCP server at `lundrigan.byu.edu:8082`. This server is only accessible on campus (for security purposes). If you are off-campus, you will need to VPN or use [SSH port forwarding](https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding) to test against it.
+You can follow the same testing structure as lab 1 and 2. I will also be running a TCP server at `ecen426.byu.edu:8082`. This server is only accessible on campus (for security purposes). If you are off-campus, you will need to VPN or use [SSH port forwarding](https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding) to test against it.
 
 
 ## Submission

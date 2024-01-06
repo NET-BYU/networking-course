@@ -109,7 +109,7 @@ nc -l 8080
 
 You can have your client connect to the server and see what is being received. You can also type a message into `netcat` as a response to your client.
 
-I will also be running a TCP server at `lundrigan.byu.edu:8080`. This server is only accessible on campus (for security purposes). If you are off-campus, you will need to VPN or use [SSH port forwarding](https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding) to test against it. Using the College's VPN is the easier approach. If for some reason you can't use the VPN, here is a video demonstrating how to using port forwarding to test out lab 1:
+I will also be running a TCP server at `ecen426.byu.edu:8080`. This server is only accessible on campus (for security purposes). If you are off-campus, you will need to VPN or use [SSH port forwarding](https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding) to test against it. Using the College's VPN is the easier approach. If for some reason you can't use the VPN, here is a video demonstrating how to using port forwarding to test out lab 1:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Kfmsi_WCd74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

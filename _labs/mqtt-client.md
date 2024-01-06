@@ -85,7 +85,7 @@ optional arguments:
 
 ## Testing
 
-I have provided an MQTT broker at lundrigan.byu.edu:1883. You can use it to test your client. 
+I have provided an MQTT broker at ecen426.byu.edu:1883. You can use it to test your client. 
 
 You can also install [`mosquitto`](https://mosquitto.org), a popular open-source MQTT broker. Using mosquitto, you can test locally on your machine. You might consider installing `mosquitto-clients`, which gives you [`mosquitto_pub`](https://mosquitto.org/man/mosquitto_pub-1.html) and [`mosuquitto_sub`](https://mosquitto.org/man/mosquitto_sub-1.html), which are clients to publish and subscribe with.
 
