@@ -86,10 +86,10 @@ With both nonces, the client and server have enough information to generate a sh
 In response to a nonce message, the server will send a hash message (0x04). The hash message payload will contain a message authentication code (MAC) of all of the messages sent and received by the server, in the order they were received/sent, using the server's data integrity key. The messages include the header of the message. Specifically, the server will hash the following:
 
 ```
-HASH(hello message + certificate message + nonce message)
+MAC(hello message + certificate message + nonce message, server's data integrity key)
 ```
 
-You can use the `utils.mac` with the appropriate data and key to calculate this value. Once the client has verified the hash is what the client expects, the client will generate its own hash, hashing all of the messages sent and received by the client, in the order they were sent/received, using its data integrity key. This hash will be sent to the server in the hash message (0x04).
+You can use the `utils.mac` with the appropriate data and key to calculate this value. Once the client has verified the hash is what the client expects, the client will generate its own hash, hashing all of the messages sent and received by the client (*not including the server hash*), in the order they were sent/received, using its data integrity key. This hash will be sent to the server in the hash message (0x04).
 
 ##### Data
 
@@ -102,9 +102,9 @@ Assuming that the previous hash matches with the server's hash, the server will 
 
 To get the data sent by the server, the client must first decrypt the data using the server's encryption key. The decrypted data has the following format:
 
-- Sequence number — 4 bytes
-- Data chunk — variable bytes
-- MAC — 32 bytes
+- Sequence number: 4 bytes
+- Data chunk: variable bytes
+- MAC: 32 bytes
 
 After you pull apart the decrypted payload, verify the sequence number, calculate the MAC on the data chunk using the server's data integrity key, and finally compare the MAC with the MAC sent from the server. If the sequence number and MAC are correct, then the data chunk can be used. The server will continue to send data messages until it has sent a complete file, then it will close the socket. Warning: an advisory will occasionally change the encrypted data or replay data, so you must check the sequence number and verify the MAC.
 
