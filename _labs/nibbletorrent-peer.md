@@ -255,6 +255,8 @@ Here is a diagram showing the general interactions between the different compone
 
 - The default port must be `8088`.
 
+- The default destination folder must be the current directory.
+
 - Your program must be able to download the file associated with the torrent file.
 
 - You must upload and download data at the same time with other peers.
@@ -287,3 +289,9 @@ To submit your code, push it to your Github repository. Tag the commit you want 
 - [Converting int to bytes](https://stackoverflow.com/questions/21017698/converting-int-to-bytes-in-python-3)
 
 - [How to get your private IP address](https://pythonguides.com/python-get-an-ip-address/)
+
+- [Parsing JSON in Python](https://docs.python.org/3/library/json.html)
+
+- [Good way of creating a TCP server in Python](https://docs.python.org/3/library/socketserver.html)
+
+- [Converting hex strings to bytes](https://stackoverflow.com/questions/5649407/how-to-convert-hexadecimal-string-to-bytes-in-python)
