@@ -14,7 +14,7 @@ problems:
     - question: What is the difference between non-persistent HTTP connections and persistent HTTP connections? Which one is better and why?
 
     - question: Suppose within your Web browser you click on a link to obtain a Web page. The IP address for the associated URL is not cached in your local host, so a DNS lookup is necessary to obtain the IP address. Suppose that four DNS servers are visited before your host receives the IP address from DNS. The first DNS server visited is the local DNS cache, with an RTT delay of RTT<sub>0</sub> = 5 ms. The second, third and fourth DNS servers contacted have RTTs of 35, 30, and 1 ms, respectively. Initially, let's suppose that the Web page associated with the link contains exactly one object, consisting of a small amount of HTML text. Suppose the RTT between the local host and the Web server containing the object is RTT<sub>HTTP</sub> = 6 ms.
-      image: /426/assets/dns_http_rtt.png
+      image: assets/dns_http_rtt.png
       parts:
         - Assuming zero transmission time for the HTML object, how much time (in ms) elapses from when the client clicks on the link until the client receives the object?
         - Now suppose the HTML object references 2 very small objects on the same server. Neglecting transmission times, how much time (in ms) elapses from when the client clicks on the link until the base object and all 2 additional objects are received from web server at the client, assuming non-persistent HTTP and no parallel TCP connections?

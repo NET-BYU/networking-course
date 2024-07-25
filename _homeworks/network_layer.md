@@ -6,7 +6,7 @@ icon: network-layer.svg
 problems:
     - question: Did you do spend at least 30 minutes on the [IP](http://www-net.cs.umass.edu/wireshark-labs/Wireshark_IP_v8.0.pdf) Wireshark lab?
     - question: Consider a datagram network using 8-bit host addresses. Suppose a router uses longest-prefix matching with the above forwarding table. Suppose a datagram arrives at the router, with the following destination addresses. Specify which interface will the datagram be forwarded using longest-prefix matching.
-      image: /426/assets/longest_prefix.png
+      image: assets/longest_prefix.png
       parts: 
         - "`01110001`"
         - "`10011101`"
@@ -20,7 +20,7 @@ problems:
     - question: Assume you are setting up subnets on your home network, using the address space 192.168.0.0/16. You are trying to make subnets as small as possible but still accommodate the necessary number of hosts. What should the subnet (in CIDER notation) be if you want to support at most 61 hosts?
 
     - question: Consider the scenario below in which three hosts, with private IP addresses 10.0.1.11, 10.0.1.15, 10.0.1.23 are in a local network behind a NAT'd router that sits between these three hosts and the larger Internet. IP datagrams being sent from, or destined to, these three hosts must pass through this NAT router. The router’s interface on the LAN side has IP address 10.0.1.27, while the router’s address on the Internet side has IP address 135.122.200.215. Suppose that the host with IP address 10.0.1.11 sends an IP datagram destined to host 128.119.175.183. The source port is 3415, and the destination port is 80.
-      image: /426/assets/nat.png
+      image: assets/nat.png
       parts: 
         - What is the source IP address, source port, destination address, and destination port for datagram 1?
         - What is the source IP address, source port, destination address, and destination port for datagram 2?

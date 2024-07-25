@@ -13,7 +13,7 @@ layout: default
             {% for problem in page.problems %}
 
             {% if problem.image %}
-            <img src="{{ problem.image }}" />
+            <img src="{% link {{ problem.image }} %}" />
             {% endif %}
 
             <li>{{ problem.question | markdownify }}</li>

@@ -15,16 +15,16 @@ problems:
   - question: What problems are introduced by using a store-and-forward transmission technique for routers and switches?
   
   - question: Suppose that the packet length is **L = 16000 bits**, and that the link transmission rate along the link to router on the right is **R = 100 Mbps**. 
-    image: http://gaia.cs.umass.edu/kurose_ross/interactive/single_link_transmission_time.png
+    image: assets/single_link_transmission_time.png
     parts:
       - What is the transmission delay?
       - What is the maximum number of packets per second that can be transmitted by this link?
   
   - question: Assume the length of a packet is 4000 bits. The speed of light propagation delay on each link is 3x10<sup>8</sup> m/sec. What is the **transmission delay** and **propagation delay** for links 1, 2, and 3? What is the total end-to-end delay?
-    image: /426/assets/transmission_delay.png
+    image: assets/transmission_delay.png
 
   - question: 
-    image: /426/assets/bottleneck.png
+    image: assets/bottleneck.png
     parts: 
       - What is the maximum achievable end-end throughput (in Mbps) for each of four client-to-server pairs, assuming that the middle link is fairly shared (divides its transmission rate equally)?
 
