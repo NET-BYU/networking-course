@@ -26,6 +26,8 @@ problems:
         - What is the UDP/TCP checksum protecting against? 
         - What is the UDP/TCP checksum not protecting against?
         - Why should you include the header in the checksum and not just the payload?
+    
+    - question: Write code to validate a TCP packet following [this guide](https://beej.us/guide/bgnet0/html/#project-validating-a-tcp-packet). The guide will give you data and walk you through the process of writing Python code to validate a TCP packet's checksum. Post your code.
 
     - question:
       image: assets/tcp_multiplexing.png
