@@ -30,12 +30,8 @@ icon: fas fa-terminal
     - A description of the return value and its meaning.
 
 ### 3. Formatting
-* **3.1** You must use the [`clang-format`](https://clang.llvm.org/docs/ClangFormat.html) code formatter on your code. I recommend you use something that automatically formats your code when you save your file, such as [VS Code](https://code.visualstudio.com) and the [C/C++ Extension](https://github.com/Microsoft/vscode-cpptools). You must configure your system with the following settings:
-    - BasedOnStyle: LLVM
-    - IndentWidth: 4
-    - UseTab: Never
-    - ColumnLimit: 80 or 100
-
+* **3.1** You must use the [`clang-format`](https://clang.llvm.org/docs/ClangFormat.html) code formatter on your code. I recommend you use something that automatically formats your code when you save your file, such as [VS Code](https://code.visualstudio.com) and the [C/C++ Extension](https://github.com/Microsoft/vscode-cpptools). The starter code for the C labs include a `.clang-format` file that your C/C++ VS Code extension will use by default. If you do not like the format, you can change it.
+  
 ### 4. Program Output
 * **4.1** All logging messages must be written to `stderr`.
 
