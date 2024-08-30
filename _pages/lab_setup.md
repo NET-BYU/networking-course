@@ -7,13 +7,13 @@ icon: fas fa-wrench
 
 ## Development Environment
 
-You are welcome to use the computers in the Embedded Lab (EB 438) to work on your labs, however, none of the labs require you to sit at one of these computers. The labs will be tested and graded on Linux, so you need to make sure that it works in that environment. However, I completed all of the labs on macOS and did not see major differences. If you would like to use pure Windows to develop your labs, don't. Sorry, the socket programming is different on Windows so it would require a lot of effort to have it support Windows and Linux. I can't vouch for the Linux Subsystem on Windows, but you are welcome to try. Students in the past have had success using it. Just know that all grading will be done using pure Linux. If you don't have access to Linux on your machine, you can SSH into a Embedded Lab computer and develop from there, or install a VM on your machine. 
+You are welcome to use the computers in the Embedded Lab (EB 438) or Digital Lab (EB 423) to work on your labs, however, none of the labs require you to sit at one of these computers. The labs will be tested and graded on Linux, so you need to make sure that it works in that environment. I completed all of the labs on macOS and did not see major differences. If you would like to use pure Windows to develop your labs, don't. Sorry, the socket programming is different on Windows so it would require a lot of effort to support Windows and Linux. I can't vouch for the Linux Subsystem on Windows, but you are welcome to try. Students in the past have had success using it. Just know that all grading will be done using pure Linux. If you don't have access to Linux on your machine, you can SSH into a Digital Lab or Embedded Lab computer and develop from there, or install a VM on your machine.
 
-To SSH into an Embedded Lab computer, use the following host name: `embed-<N>.ee.byu.edu`, replacing <N> with the computer number. These computers should have all the necessary libraries and executables to do the labs.
+To SSH into an Embedded Lab computer, use the following hostname: `digital-<N>.ee.byu.edu` or `embed-<N>.ee.byu.edu`, replacing <N> with the computer number. These computers should have all the necessary libraries and executables to do the labs.
 
 ## Visual Studio Code
 
-I highly recommend you use [VS Code](https://code.visualstudio.com). It's a good enough [editor]({% link assets/vim.png %}) and has a lot of powerful extensions. Specifically, using the auto-formatting on save will save you a lot of trouble (and points) when you submit your code. Set up your VS Code [C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) with the following Clang format specification:
+I highly recommend you use [VS Code](https://code.visualstudio.com). It's a good enough [editor]({% link assets/vim.png %}) and has a lot of powerful extensions. Specifically, using auto-formatting on save will save you a lot of trouble (and points) when you submit your code. Set up your VS Code [C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) with the following Clang format specification:
 
 ```
 { BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, ColumnLimit: 100 }
@@ -45,20 +45,4 @@ For each lab, you will be given a link to start the lab. This will automatically
 
 ## Lab Submission
 
-To submit your lab, you must create a tag named `final` on your git repository. The following command will tag your most recent commit and push that tag to GitHub:
-
-```
-git tag final
-git push origin final
-```
-
-This tag will point to your most recent commit of whichever branch you are currently located on (so make sure all of your changes are committed before running this). If you are not confident you did this correctly, you may want to go to a new directory (not in your repo) and run `git clone --branch final <repo_url>` to clone your tag and verify that it builds and runs correctly.
-
-If, after you create this tag, you want to change it (i.e., re-submit your code), you can run the following commands and include the --force option to overwrite the tag:
-
-```
-git tag --force final
-git push --force origin final
-```
-
-If you don’t use the correct tag name (`final`), the lab will not be count as submitted.
+I will be using Gradescope to grade your labs. You will submit your code to Gradescope and it will give you a preliminary score. You are allowed to fix your code and resubmit it as many times as you want before the deadline. I will only grade the last submission before the deadline. **There will be extra test cases that will only be used after the deadline has passed.** This is motivation to write your code as best you can and not just write code that passes the tests.
