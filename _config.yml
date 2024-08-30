@@ -19,6 +19,7 @@ class_number: ECEn 426
 email: lundrigan@byu.edu
 description: >-
   Class website for BYU's ECEn 426: Computer Networks.
+host: localhost
 baseurl: "/426" # the subpath of your site, e.g. /blog
 url: "https://ecenetworking.byu.edu" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
