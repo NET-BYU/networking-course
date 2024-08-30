@@ -8,28 +8,12 @@ layout: default
     </h1>
 
     <div class="page-content">
-        {% if page.problems %}
-        <ol>
-            {% for problem in page.problems %}
+        {% if page.pdf %}
 
-            {% if problem.image %}
-            <img src="{% link {{ problem.image }} %}" />
-            {% endif %}
+        <div>
+            <a href="{% link {{ page.pdf }} %}" target="_blank" rel="noopener noreferrer"><i class="fa-duotone fa-solid fa-file-pdf" style="font-size: 6em;"></i></a>
+        </div>
 
-            <li>{{ problem.question | markdownify }}</li>
-
-            {% if problem.parts %}
-            <ol type="a">
-                {% for part in problem.parts %}
-                <li>{{ part | markdownify }}</li>
-                {% endfor %}
-            </ol>
-            {% endif %}
-
-            <hr style="border: 0; border-bottom: 1px dotted #ccc; margin: 30px 0px">
-
-            {% endfor %}
-        </ol>
         {% else %}
         <style>
             .dunder h2 {
