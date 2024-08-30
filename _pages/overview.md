@@ -40,8 +40,6 @@ This is a networking class, so the major goal is to get you familiar with **netw
 | Final         | 20         |
 | Participation | 3          |
 
-There are nine labs, so each lab is worth 4.4% of your grade. There are five homeworks, so each homework is worth 3% of your grade.
-
 
 ## Communication
 All communication will be done over Teams. Teams is intended to be used for announcements, questions, and facilitate student communication. If you have a question, ask it on Teams so that everyone can benefit from seeing the question and answer. 
