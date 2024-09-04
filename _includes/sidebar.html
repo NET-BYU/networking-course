@@ -10,8 +10,7 @@
             {% for item in site.pages %}
             <!-- Look for specific front-matter tag -->
             {% if item.link %}
-            <a href="{{item.link }}" class="list-group-item list-group-item-action bg-light sidebar-item" {% if
-                item.new_window %}target="_blank" {% endif %}>
+            <a href="{{item.link }}" class="list-group-item list-group-item-action bg-light sidebar-item" {% if item.new_window %}target="_blank" {% endif %}>
                 {% if item.icon %}
                 <i class="{{ item.icon }}"></i>
                 {% endif %}
@@ -41,13 +40,21 @@
         <div class="sidebar-heading">Homeworks</div>
         <div class="list-group list-group-flush">
             {% for item in site.homeworks %}
-            <a href="{% link {{item.path }} %}" class="list-group-item list-group-item-action bg-light sidebar-item">
+            {% if item.link %}
+            <a href="{{item.link }}" class="list-group-item list-group-item-action bg-light sidebar-item">
                 {% if item.icon %}
-                <img src="{% link icon/{{ item.icon }} %}" alt="triangle with all three sides equal" height="20"
-                    width="20" />
+                <img src="{% link icon/{{ item.icon }} %}" height="20" width="20" />
                 {% endif %}
                 {{ item.title }}
             </a>
+            {% else %}
+            <a href="{% link {{item.path }} %}" class="list-group-item list-group-item-action bg-light sidebar-item">
+                {% if item.icon %}
+                <img src="{% link icon/{{ item.icon }} %}" height="20" width="20" />
+                {% endif %}
+                {{ item.title }}
+            </a>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
