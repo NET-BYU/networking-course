@@ -13,19 +13,9 @@ To SSH into an Embedded Lab computer, use the following hostname: `digital-<N>.e
 
 ## Visual Studio Code
 
-I highly recommend you use [VS Code](https://code.visualstudio.com). It's a good enough [editor]({% link assets/vim.png %}) and has a lot of powerful extensions. Specifically, using auto-formatting on save will save you a lot of trouble (and points) when you submit your code. Set up your VS Code [C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) with the following Clang format specification:
+I highly recommend you use [VS Code](https://code.visualstudio.com). It's a good enough [editor]({% link assets/vim.png %}) and has a lot of powerful extensions. Specifically, using auto-formatting on save will save you a lot of trouble (and points) when you submit your code. First, you need to install the VS Code [C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). If a project contains a `.clang-format` file in it, then the extension will use that to format your code. All the labs will have a `.clang-format` file in them. If you want to use a different style, you can modify the file.
 
-```
-{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, ColumnLimit: 100 }
-```
-
-(you can also change the ColumnLimit to 80, the default.)
-
-Here is an example of my configuration:
-
-![Clang format configuration in VS Code]({% link assets/clang-format.png %}){:width="80%"}
-
-I even have it format my code on save.
+Here is the setting to turn on format on save:
 
 ![Setting to format on save]({% link assets/format-on-save.png %}){:width="80%"}
 
