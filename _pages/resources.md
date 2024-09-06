@@ -19,6 +19,11 @@ The book comes with some online tools to help you understand the material:
 
 Here are some other resources that might help you:
 
+- [SSH Tutorial](https://byu-cpe.github.io/ComputingBootCamp/tutorials/linux/#ssh)
+
+- Python Learning
+  - [BYU Computing Boot Camp](https://byu-cpe.github.io/ComputingBootCamp/tutorials/pythonIntro/)
+
 - [Introduction to Computer Networks](https://csedu4all.org/course_networks/)
 
 - The YouTube channel Computerphile has some good videos on networking:
