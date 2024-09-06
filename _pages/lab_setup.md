@@ -29,9 +29,9 @@ My highly opinionated set up involves using [zsh](https://en.wikipedia.org/wiki/
 
 ## Git Repositories
 
-For the labs, we will be using [GitHub Classroom](https://classroom.github.com/classrooms). If you are unfamiliar with Git, now is the time to start learning. VSCode has some Git integrations which will make this easier. 
+For the labs, we will be using GitHub Classroom. If you are unfamiliar with Git, now is the time to start learning. VSCode has some Git integrations which will make this easier. 
 
-For each lab, you will be given a link to start the lab. This will automatically create a GitHub repo for you for that lab. The first three labs have template code for you. This is the only way to start and submit the lab! In order for your code to be graded, you must push your code to your repo.
+For each lab, you will be given a link to start the lab. This will automatically create a GitHub repo for you for that lab. This is the only way to start and submit the lab! In order for your code to be graded, you must push your code to your repo.
 
 ## Lab Submission
 
