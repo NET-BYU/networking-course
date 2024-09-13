@@ -36,3 +36,5 @@ For each lab, you will be given a link to start the lab. This will automatically
 ## Lab Submission
 
 I will be using Gradescope to grade your labs. You will submit your code to Gradescope and it will give you a preliminary score. You are allowed to fix your code and resubmit it as many times as you want before the deadline. I will only grade the last submission before the deadline. **There will be extra test cases that will only be used after the deadline has passed.** This is motivation to write your code as best you can and not just write code that passes the tests.
+
+Once you have finished the lab and your code is pushed to GitHub, go to LS and find the lab assignment. Click on the "Launch External Plugin". This will bring up Gradescope with the corresponding lab. Select GitHub for the submission method (if it hasn't been selected already), and select the repository and branch with the code you want to upload and submit. If you have not done this before, then you will have to link your GitHub account to Gradescope using the "Connect to GitHub" button.
