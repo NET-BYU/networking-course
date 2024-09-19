@@ -139,5 +139,4 @@ To submit your code, push it to your Github repository. Tag the commit you want 
 
 - [Exit Status](https://www.tldp.org/LDP/abs/html/exit-status.html)
 
-- Be careful of unicode characters sneaking into your input. Characters are counted differently than bytes with unicode, so `strlen` will not work! These labs only needs to work with ASCII text.
-  - [A solution for counting characters and not bytes in C](https://stackoverflow.com/a/3911566)
+- Be careful of unicode characters sneaking into your input. Characters are counted differently than bytes with unicode, so `strlen` will not work! **These labs only need to work with ASCII text.** If you are curious, [here is a solution for counting characters and not bytes](https://stackoverflow.com/a/3911566) in C.
