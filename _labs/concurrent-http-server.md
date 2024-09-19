@@ -97,8 +97,7 @@ The benchmarking tool, [wrk2](https://github.com/giltene/wrk2), will also help y
 
 ## Submission
 
-To submit your code, push it to your Github repository. Tag the commit you want to be graded with a tag named `final`.
-
+To submit your code, upload it to Gradescope.
 
 ## Resources
 

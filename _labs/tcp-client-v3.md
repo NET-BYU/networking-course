@@ -141,8 +141,7 @@ You can follow the same testing structure as lab 1 and 2. I will also be running
 
 ## Submission
 
-To submit your code, push it to your Github repository. Tag the commit you want to be graded with a tag named `final`.
-
+To submit your code, upload it to Gradescope.
 
 ## Resources
 

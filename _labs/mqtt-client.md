@@ -92,7 +92,7 @@ You can also install [`mosquitto`](https://mosquitto.org), a popular open-source
 
 ## Submission
 
-To submit your code, push it to your Github repository. Tag the commit you want to be graded with a tag named `final`.
+To submit your code, upload it to Gradescope.
 
 
 ## Resources

@@ -161,8 +161,7 @@ I will also be running a Simple TLS server at `ecen426.byu.edu:8087`.
 
 ## Submission
 
-To submit your code, push it to your Github repository. Tag the commit you want to be graded with a tag named `final`.
-
+To submit your code, upload it to Gradescope.
 
 ## Resources
 

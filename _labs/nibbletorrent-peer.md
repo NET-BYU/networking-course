@@ -275,7 +275,7 @@ I will provide a few peers that will upload and download. Their client IDs will 
 
 ## Submission
 
-To submit your code, push it to your Github repository. Tag the commit you want to be graded with a tag named `final`.
+To submit your code, upload it to Gradescope.
 
 
 ## Resources
