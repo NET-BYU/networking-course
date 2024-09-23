@@ -119,6 +119,8 @@ Options:
 
 - Your program must handle *any size* input.
 
+- Your program must follow the same logging conventions and return value conventions as the previous lab.
+
 
 ## Testing
 

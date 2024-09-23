@@ -90,7 +90,7 @@ Options:
 
 - Your program is only allowed to print the text returned from the server to `stdout`. Everything else should be printed to `stderr`.
 
-- When the verbose flag is set, you must print debugging messages to `stderr`. These debugging messages must be *meaningful* and not garbage data. They should be helpful to anyone that is trying to debug your program.
+- When the verbose flag is set, you must print debugging messages to `stderr`. These debugging messages must be *meaningful* and not garbage data. They should be helpful to anyone that is trying to debug your program. If the verbose flag is not set, you should not print any debugging messages.
 
 - Your program must return a correct exit code, using `EXIT_SUCCESS` and `EXIT_FAILURE` (see [here](https://en.wikipedia.org/wiki/Exit_status#C_language)).
 
