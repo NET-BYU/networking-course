@@ -23,6 +23,9 @@ Here are some other resources that might help you:
 
 - Python Learning
   - [BYU Computing Boot Camp](https://byu-cpe.github.io/ComputingBootCamp/tutorials/pythonIntro/)
+  - [Python in 100 Seconds](https://youtu.be/x7X9w_GIm1s?si=3GvOK_UwlNPVgR9B)
+  - [Learn Python in Less than 10 Minutes for Beginners](https://youtu.be/fWjsdhR3z3c?si=sQfzZuAuwGbX2KKH)
+  - [Python for Beginners - Learn Python in 1 Hour](https://www.youtube.com/watch?v=kqtD5dpn9C8)
 
 - [Introduction to Computer Networks](https://csedu4all.org/course_networks/)
 
