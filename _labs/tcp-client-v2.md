@@ -138,6 +138,8 @@ To submit your code, upload it to Gradescope.
 
 - [strchr](http://www.cplusplus.com/reference/cstring/strchr/)
 
+- It might be helpful to use [`sscanf`](http://www.cplusplus.com/reference/cstdio/sscanf/) to separate the action from the message and [strip off the newline character](https://stackoverflow.com/questions/39431924/what-does-n-mean-in-c).
+
 - Memory management
     - [malloc](https://en.cppreference.com/w/c/memory/malloc)
 
