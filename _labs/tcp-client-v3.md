@@ -67,7 +67,7 @@ Message Length: 32 bits
 Data: variable
 ```
 
-When dealing with binary formats, you have to be careful what kind of [endianness](https://en.wikipedia.org/wiki/Endianness) you use. You don't know what architecture the server is running, so you can't assume it is the same as yours. The server also can't assume anything. To deal with this, all networking protocols are formatted in big-endianness (called network order).
+When dealing with binary formats, you have to be careful what kind of [endianness](https://en.wikipedia.org/wiki/Endianness) you use. You don't know what architecture the server is running, so you can't assume it is the same as yours. The server also can't assume anything. To deal with this, all networking protocols are formatted in big-endian (called network order).
 
 For example, if you wanted to reverse the string "The LAN Before Time", then you would send the following binary data (displayed in hex format):
 
