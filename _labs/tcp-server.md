@@ -120,7 +120,7 @@ optional arguments:
 
 ## Testing
 
-[Netcat](http://netcat.sourceforge.net) is going to be your best friend for this lab. This will allow you to connect directly to your server and test out different input. You can also use the client that you created in lab 3.
+I have provided `test.py` in your repository to help you test your server code. It creates the binary header and message and sends it to your server. You will want to add more to `test.py` to fully test your server. You can also use the client that you created in lab 3.
 
 
 ## Submission
