@@ -61,7 +61,7 @@ Then all requests would be relative to the `www` folder. The previous request wo
 ```
 usage: http_server.py [-h] [-p PORT] [-v] [-d] [-f FOLDER]
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -p PORT, --port PORT  port to bind to
   -v, --verbose         turn on debugging output
