@@ -67,6 +67,8 @@ Run the benchmark **3 or more times** and report the best run. You should turn o
 
 ## Requirements
 
+- The name of your program must be named `http_server.py`.
+
 - You must be able to handle multiple concurrent clients at once using threads and a thread pool.
 
 - You can only use the low-level [threading.Thread](https://docs.python.org/3/library/threading.html#thread-objects) objects. All high-level concurrency libraries like [concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html) is not allowed. Python has implementations of thread pools, but you must implement these yourself to get the credit.
