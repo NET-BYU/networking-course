@@ -40,11 +40,11 @@ optional arguments:
   -d, --delay           add a delay for debugging purposes
   -f FOLDER, --folder FOLDER
                         folder from where to serve from
-  -c {thread,thread-pool,async}, --concurrency {thread,thread-pool,async}
+  -c {thread,thread-pool}, --concurrency {thread,thread-pool}
                         concurrency methodology to use
 ```
 
-Only `thread` and `thread-pool` are required in this lab. The `async` option extra credit.
+Only `thread` and `thread-pool` are required in this lab. For extra credit, you can add the `async` option to the concurrency flag.
 
 ### Benchmarking
 
@@ -73,7 +73,7 @@ Run the benchmark **3 or more times** and report the best run. You should turn o
 
 - You can only use the low-level [threading.Thread](https://docs.python.org/3/library/threading.html#thread-objects) objects. All high-level concurrency libraries like [concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html) is not allowed. Python has implementations of thread pools, but you must implement these yourself to get the credit.
 
-- Add the `-c`/`--concurrency` flags to your program. You only need to support `thread` and `thread-pool`. If the concurrency flag is not provided, the default value should be `thread`. 
+- Add the `-c`/`--concurrency` flags to your program. You only need to support `thread` and `thread-pool`. If the concurrency flag is not provided, the default value should be `thread`. If you decided not to do the extra credit, do NOT include the `async` concurrency flag.
 
 - You must gracefully shutdown your server, waiting for all client sockets to finish.
 
