@@ -67,6 +67,8 @@ Run the benchmark **3 or more times** and report the best run. You should turn o
 
 ## Requirements
 
+- You must use Python 3.10 for this lab.
+
 - The name of your program must be named `http_server.py`.
 
 - You must be able to handle multiple concurrent clients at once using threads and a thread pool.

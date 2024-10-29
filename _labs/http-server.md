@@ -48,7 +48,7 @@ Then all requests would be relative to the `www` folder. The previous request wo
 
 ## Requirements
 
-- You must use the same version of Python the Embedded Lab computers are using.
+- You must use Python 3.10 for this lab.
 
 - You **can not use any third party Python libraries** for this lab. If you have to `pip install` or clone any repos, in order to import a library, stop. The only exception is the formatter, [Black](https://github.com/psf/black), which you have to `pip install`. However, you do not use it in your code. 
 
