@@ -97,7 +97,7 @@ To submit your code, upload it to Gradescope.
 
 ## Resources
 
-- [Paho MQTT Python client](https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php)
+- [Paho MQTT Python client library](https://github.com/eclipse/paho.mqtt.python)
 - [Paho MQTT Python client publication example](https://github.com/eclipse/paho.mqtt.python/blob/master/examples/client_pub-wait.py)
 - [Paho MQTT Python client subscription example](https://github.com/eclipse/paho.mqtt.python/blob/master/examples/client_sub.py)
 - [Python logging](https://realpython.com/python-logging/)
