@@ -68,7 +68,7 @@ optional arguments:
 
 - You must use Python 3.10 for this lab.
 
-- The only third-party Python library you are allowed to use in this lab is the [Paho MQTT Client library](https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php). All other third-party libraries are off limits. 
+- The only third-party Python library you are allowed to use in this lab is the [Paho MQTT Client library](https://github.com/eclipse/paho.mqtt.python). All other third-party libraries are off limits. 
 
 - You must name your program `mqtt_client.py`.
 
