@@ -288,7 +288,7 @@ To submit your code, upload it to Gradescope.
 
 - [Converting int to bytes](https://stackoverflow.com/questions/21017698/converting-int-to-bytes-in-python-3)
 
-- [How to get your private IP address](https://pythonguides.com/python-get-an-ip-address/)
+- [How to get your private IP address](https://stackoverflow.com/questions/166506/finding-local-ip-addresses-using-pythons-stdlib/)
 
 - [Parsing JSON in Python](https://docs.python.org/3/library/json.html)
 
