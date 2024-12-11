@@ -263,6 +263,8 @@ Here is a diagram showing the general interactions between the different compone
 
 - You must support up to 5 concurrent connections with different peers.
 
+- You must validate each piece after downloading it to make sure it is correct.
+
 
 ## Testing
 
