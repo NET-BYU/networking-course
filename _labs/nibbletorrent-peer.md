@@ -268,7 +268,7 @@ Here is a diagram showing the general interactions between the different compone
 
 ## Testing
 
-This is a big program, but you can make testing easier by breaking it into smaller chunks. Feel free to add additional commandline options that let you test specific components of your lab. For example, first test the upload component, then independently test the download part. Finally test all of the parts together.
+This is a big program, but you can make testing easier by breaking it into smaller chunks. Feel free to add additional commandline options that let you test specific components of your lab. For example, first test the download component, then independently test the upload part. Finally test all of the parts together.
 
 The tracker provides the the IP address and client ID of each peer. It is a requirement for your lab to work with other people's peers, but you can temporarily restrict which peers you connect with for testing purposes.
 
@@ -277,8 +277,13 @@ I will provide a few peers that will upload and download. Their client IDs will 
 
 ## Submission
 
-To submit your code, upload it to Gradescope.
+To pass off this lab, you will need to demonstrate to me or the TA that your peer can:
 
+1. Contact the tracker (1 point)
+2. Download a file from multiple peers *at once* (1 point for downloading the file correctly, 1 point for downloading from multiple peers)
+3. Upload a file to other peers, including yourself (1 for uploading to other peers, 1 point for uploading the file to yourself correctly).
+
+The easiest way to demonstrate this is to start your peer in one terminal and download a file. This also shows that you can contact the tracker. Then start a second peer (saving the file to a different location, running on a different port) in another terminal and download the same file. Make sure to print out log messages that show what peer you are downloading a piece from and what peer you are uploading a piece to.
 
 ## Resources
 
