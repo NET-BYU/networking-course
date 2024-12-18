@@ -201,17 +201,18 @@ To facilitate the protocol, your peer will need the following pieces of informat
 - The port from which peers can connect to you.
 
 ```
-usage: peer.py [-h] [-p PORT] [-d DEST] [-v] netid torrent_file
+usage: peer.py [-h] [-p PORT] [-d DEST] [-f NETID] [-v] netid torrent_file
 
 positional arguments:
   netid                 Your NetID
   torrent_file          The torrent file for the file you want to download.
 
 optional arguments:
-  -h, --help            Show this help message and exit.
-  -p PORT, --port PORT  The port to receive peer connections from.
-  -d DEST, --dest DEST  The folder to download to and seed from.
-  -v, --verbose         Turn on debugging messages.
+  -h, --help                Show this help message and exit.
+  -p PORT, --port PORT      The port to receive peer connections from.
+  -d DEST, --dest DEST      The folder to download to and seed from.
+  -f NETID, --filter NETID  The NetID of the peer you will only download from.
+  -v, --verbose             Turn on debugging messages.
 ```
 
 ### Program Flow
@@ -280,10 +281,16 @@ I will provide a few peers that will upload and download. Their client IDs will 
 To pass off this lab, you will need to demonstrate to me or the TA that your peer can:
 
 1. Contact the tracker (1 point)
-2. Download a file from multiple peers *at once* (1 point for downloading the file correctly, 1 point for downloading from multiple peers)
-3. Upload a file to other peers, including yourself (1 for uploading to other peers, 1 point for uploading the file to yourself correctly).
+2. Download a file correctly (1 point) from multiple peers *at once* (1 point)
+3. Upload a file to other peers (1 point), including yourself (1 point)
 
-The easiest way to demonstrate this is to start your peer in one terminal and download a file. This also shows that you can contact the tracker. Then start a second peer (saving the file to a different location, running on a different port) in another terminal and download the same file. Make sure to print out log messages that show what peer you are downloading a piece from and what peer you are uploading a piece to.
+To demonstrate this, follow these steps:
+
+1. Start your peer in one terminal and download a file. Verify that the file has been received correctly. This also shows that you can contact the tracker. Make sure you are printing out log messages that show what peer you are downloading a piece from to show that you can download from multiple peers at once. 
+
+2. Start a second peer in another terminal (changing your ID, saving the file to a different location, and running on a different port) and download the same file. Make sure to print out log messages that show what peer you are downloading a piece from and what peer you are uploading a piece to. Verify that the file has been downloaded correctly by the second peer.
+
+3. Stop your second peer, and then using the command line option, limit the peers you download from to only your first peer and restart your second peer. This will verify that you can download the whole file from your first peer. Verify that the file has been downloaded correctly.
 
 ## Resources
 
