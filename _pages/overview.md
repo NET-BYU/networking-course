@@ -28,6 +28,15 @@ This course is made up of three major components:
 
 This is a networking class, so the major goal is to get you familiar with **networking principles, how to send data reliably and securely, and a good understanding of how the Internet works**. However, I am taking a two-prong approach to this class. Along the way of learning the fundamentals of networking, I want you to gain valuable computer systems-level experience. This part of the course is accomplished through the labs. In the labs, you will be exposed to socket programming, file I/O, writing good command-line tools, and concurrency techniques.
 
+## How to Succeed in this Class
+
+- **Come to class**. A lot of good information and context is shared in class. Since I post the slides, you will be tempted to think that you don’t need to come. I promise—you do.
+
+- **Take notes**. If you are going to be in class, take notes. Better yet, write out your notes. Taking notes will help you retain information from lecture and give you something personalize to refer to when you are doing the homework and studying for tests.
+
+- **Start the labs early**. The labs are the hardest part of the class. They are designed to be challenging and to stretch you. If you start them early, you will have time to ask questions and get help.
+
+- **Ask questions**. If you don’t understand something, ask. I am here to help you learn. I have generous office hours, and I am happy to help you any way I can.
 
 
 ## Grade Breakdown
