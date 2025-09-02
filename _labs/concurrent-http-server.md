@@ -20,7 +20,7 @@ Use the GitHub Classroom link posted in the Teams channel for the lab to accept 
 
 For this lab, you will be extending your HTTP server to handle multiple clients _at once_. The rest of your server will stay the same. There are multiple ways of supporting multiple clients. A typical approach is to spawn a new thread or process for each client that connects. That thread or process is responsible for communicating with a specific client. There is another approach that uses a system call (`poll` or `select`) to determine which sockets are ready to receive data from or write data to. Since with socket programming, most of the time your program is waiting around for the sockets to send or receive data, this allows your program to handle multiple sockets at once. Instead of creating a new thread or process for each client socket, one process keeps track of many sockets at once.
 
-For this lab, you are required to implement a concurrent server in two ways: using threads and using a thread pool. Using standard threads, when a new request comes in, a thread is created and the socket is passed to that thread. The newly spawned thread is now responsible for receiving and sending data while the main thread is still accepting new clients. With a thread pool, you create a bunch of threads before starting your server and hand tasks (i.e., new clients) to threads that are idle. As mentioned in lecture, threads have their own set of issues, largely shared memory. To limit these issues, try to use local variables as much as possible. You should not need to use mutex/locks in this lab! For extra credit, you can also implement your sever using Python's [Asynchronous I/O](https://docs.python.org/3/library/asyncio.html) library.
+For this lab, you are required to implement a concurrent server in three ways: using threads, using a thread pool, and using `select`. Using standard threads, when a new request comes in, a thread is created and the socket is passed to that thread. The newly spawned thread is now responsible for receiving and sending data while the main thread is still accepting new clients. With a thread pool, you create a bunch of threads before starting your server and hand tasks (i.e., new clients) to threads that are idle. As mentioned in lecture, threads have their own set of issues, largely shared memory. To limit these issues, try to use local variables as much as possible. You should not need to use mutex/locks in this lab! For the `select` implementation, you will need to use the [`select` call](https://docs.python.org/3/library/selectors.html) to determine which sockets are ready to read from or write to. This is a more advanced technique and requires a good understanding of how sockets work. You will need to maintain a list of all the client sockets that are connected to your server and use `select` to determine which sockets are ready for reading or writing.
 
 As part of writing a well behaving server, you will need to appropriately handle the threads when you are exiting (the user hits `ctrl-c`). This allows your server to finishing handling clients that have already connected before shutting down the server. To do this, you must join all spawned threads.
 
@@ -40,11 +40,9 @@ optional arguments:
   -d, --delay           add a delay for debugging purposes
   -f FOLDER, --folder FOLDER
                         folder from where to serve from
-  -c {thread,thread-pool}, --concurrency {thread,thread-pool}
+  -c {thread,thread-pool,select}, --concurrency {thread,thread-pool,select}
                         concurrency methodology to use
 ```
-
-Only `thread` and `thread-pool` are required in this lab. For extra credit, you can add the `async` option to the concurrency flag.
 
 ### Benchmarking
 
@@ -58,7 +56,7 @@ Run the benchmark **3 or more times** and report the best run. You should turn o
 
 ## Objectives
 
-- Learn how to use threading and processes in Python.
+- Learn how to use threading, thread pools, and select in Python.
 
 - Learn how to make an HTTP server concurrent.
 
@@ -75,7 +73,7 @@ Run the benchmark **3 or more times** and report the best run. You should turn o
 
 - You can only use the low-level [threading.Thread](https://docs.python.org/3/library/threading.html#thread-objects) objects. All high-level concurrency libraries like [concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html) is not allowed. Python has implementations of thread pools, but you must implement these yourself to get the credit.
 
-- Add the `-c`/`--concurrency` flags to your program. You only need to support `thread` and `thread-pool`. If the concurrency flag is not provided, the default value should be `thread`. If you decided not to do the extra credit, do NOT include the `async` concurrency flag.
+- Add the `-c`/`--concurrency` flags to your program. If the concurrency flag is not provided, the default value should be `thread`.
 
 - You must gracefully shutdown your server, waiting for all client sockets to finish.
 
@@ -84,11 +82,6 @@ Run the benchmark **3 or more times** and report the best run. You should turn o
 - You must benchmark the performance of your server using threads/processes and report those results in `benchmark.md`.
 
 - All other requirements are the same as lab 5.
-
-
-## Extra Credit
-
-For extra credit, you can implement and **benchmark** your server using the Async I/O library in Python. For the Async I/O, you will need to import the [asyncio](https://docs.python.org/3/library/asyncio.html) module. This will require you to reimplement your code using the `async` and `await` key words since async code and sync code can't mix. You will receive **15% extra credit** on this assignment.
 
 ## Testing
 
@@ -108,3 +101,5 @@ To submit your code, upload it to Gradescope.
 - [Python Threads](https://docs.python.org/3/library/threading.html)
 
 - [Python Queue (good for coordinating between threads)](https://docs.python.org/3.10/library/queue.html)
+
+- [Python Select](https://docs.python.org/3/library/selectors.html)
