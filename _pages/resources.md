@@ -11,8 +11,8 @@ The class has one required textbook: ***Computer Networking: A Top-Down Approach
 
 The book comes with some online tools to help you understand the material:
 
-- [Powerpoint Slides](http://gaia.cs.umass.edu/kurose_ross/ppt.htm)
-- [Interactive Problems](http://gaia.cs.umass.edu/kurose_ross/interactive/)
+- [Powerpoint Slides](https://gaia.cs.umass.edu/kurose_ross/ppt.htm)
+- [Interactive Problems](https://gaia.cs.umass.edu/kurose_ross/interactive/)
 
 
 ### Learning Resources
@@ -38,7 +38,7 @@ Here are some other resources that might help you:
 
 There are a few tools that will be invaluable when debugging your labs.
 
-- [netcat (nc)](http://netcat.sourceforge.net)
+- [netcat (nc)](https://netcat.sourceforge.net)
 : This is a good tool for basic TCP and UDP socket debugging. It can connect to a socket or act as a socket server. It will show you all the raw data that is sent and received.
 
 - [Wireshark](https://www.wireshark.org)

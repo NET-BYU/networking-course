@@ -127,7 +127,7 @@ To submit your code, upload it to Gradescope.
 - [Guide on socket programming](https://beej.us/guide/bgnet/html/)
 
 - `stderr` and `stdout`
-    - [Tutorial](http://www.learnlinux.org.za/courses/build/shell-scripting/ch01s04.html)
+    - [Tutorial](https://www.learnlinux.org.za/courses/build/shell-scripting/ch01s04.html)
     - [`stderr` vs `stdout`](https://stackoverflow.com/questions/3385201/confused-about-stdin-stdout-and-stderr)
     - [Redirect `stderror`](https://askubuntu.com/questions/625224/how-to-redirect-stderr-to-a-file)
 

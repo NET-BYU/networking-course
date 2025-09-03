@@ -154,4 +154,4 @@ To submit your code, upload it to Gradescope.
 - [C bit fields](https://www.tutorialspoint.com/cprogramming/c_bit_fields.htm)
   - [Reference](https://en.cppreference.com/w/cpp/language/bit_field)
   - Stack Overflow: [here](https://stackoverflow.com/questions/20911460/bit-fields-in-c-and-c-where-are-they-used) and [here](https://stackoverflow.com/questions/24933242/when-to-use-bit-fields-in-c)
-  - [Deep dive](http://www.catb.org/esr/structure-packing/)
+  - [Deep dive](https://www.catb.org/esr/structure-packing/)
