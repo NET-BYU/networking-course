@@ -136,9 +136,9 @@ To submit your code, upload it to Gradescope.
 
 - [Calculate length of string `sprintf` will generate](https://stackoverflow.com/questions/29087129/how-to-calculate-the-length-of-output-that-sprintf-will-generate)
 
-- [strchr](http://www.cplusplus.com/reference/cstring/strchr/)
+- [strchr](https://www.cplusplus.com/reference/cstring/strchr/)
 
-- It might be helpful to use [`sscanf`](http://www.cplusplus.com/reference/cstdio/sscanf/) to separate the action from the message and [strip off the newline character](https://stackoverflow.com/questions/39431924/what-does-n-mean-in-c).
+- It might be helpful to use [`sscanf`](https://www.cplusplus.com/reference/cstdio/sscanf/) to separate the action from the message and [strip off the newline character](https://stackoverflow.com/questions/39431924/what-does-n-mean-in-c).
 
 - Memory management
     - [malloc](https://en.cppreference.com/w/c/memory/malloc)
@@ -152,8 +152,8 @@ To submit your code, upload it to Gradescope.
 - [Function pointers](https://www.learn-c.org/en/Function_Pointers)
 
 - File IO
-    - [fopen](http://www.cplusplus.com/reference/cstdio/fopen/)
+    - [fopen](https://www.cplusplus.com/reference/cstdio/fopen/)
 
-    - [fread](http://www.cplusplus.com/reference/cstdio/fread/)
+    - [fread](https://www.cplusplus.com/reference/cstdio/fread/)
 
     - [getline](https://linux.die.net/man/3/getline)
