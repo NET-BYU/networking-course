@@ -137,7 +137,7 @@ optional arguments:
 
 ## Requirements
 
-- You must use Python 3.10 for this lab.
+- You must use Python 3.12 for this lab.
 
 - The only third-party Python library you are allowed to use in this lab is [cryptography](https://cryptography.io/en/latest/), and the two modules I am providing, `crypto_utils.py`, and `message.py`. You shouldn't have to use the cryptography library directly if you plan on using `crypto_utils.py` All other third-party libraries are off limits.
 
@@ -167,7 +167,7 @@ To submit your code, upload it to Gradescope.
 
 - Generating a cryptographic nonce
   - [Question](https://stackoverflow.com/questions/5590170/what-is-the-standard-method-for-generating-a-nonce-in-python)
-  - [`secrets.token_bytes`](https://docs.python.org/3/library/secrets.html#secrets.token_bytes)
+  - [`secrets.token_bytes`](https://docs.python.org/3.12/library/secrets.html#secrets.token_bytes)
 
 - [Convert integer to bytes](https://www.geeksforgeeks.org/how-to-convert-int-to-bytes-in-python/)
 

@@ -70,7 +70,7 @@ Your server will be designed to block forever. Once it has handled one client, i
 
 ### Logging
 
-Like the previous labs, I strongly encourage you to use logging to help debug your program and understand its flow. Python provides a powerful [logging library](https://docs.python.org/3/howto/logging.html). Spend some time learning it and it will pay off later.
+Like the previous labs, I strongly encourage you to use logging to help debug your program and understand its flow. Python provides a powerful [logging library](https://docs.python.org/3.12/howto/logging.html). Spend some time learning it and it will pay off later.
 
 
 ## Objectives
@@ -82,11 +82,11 @@ Like the previous labs, I strongly encourage you to use logging to help debug yo
 
 ## Requirements
 
-- You must use Python 3.10 for this lab (and all other Python labs).
+- You must use Python 3.12 for this lab (and all other Python labs).
 
 - You **can not use any third party Python libraries** for this lab. If you have to `pip install` or clone any repos, in order to import a library, stop. The only exception is the formatter, [Black](https://github.com/psf/black), which you have to `pip install`. However, you do not use it in your code. 
 
-- For all socket related tasks, you must only use the [low-level `socket` interface](https://docs.python.org/3/library/socket.html) that Python provides. No high-level server socket interfaces are allowed.
+- For all socket related tasks, you must only use the [low-level `socket` interface](https://docs.python.org/3.12/library/socket.html) that Python provides. No high-level server socket interfaces are allowed.
 
 - The name of your program must be named `tcp_server.py`.
 
@@ -130,14 +130,14 @@ To submit your code, upload it to Gradescope.
 
 ## Resources
 
-- [socket — Low-level networking interface](https://docs.python.org/3/library/socket.html). Make sure to look at all of the functions available to you.
+- [socket — Low-level networking interface](https://docs.python.org/3.12/library/socket.html). Make sure to look at all of the functions available to you.
 
-- [argparse](https://docs.python.org/3/library/argparse.html).
+- [argparse](https://docs.python.org/3.12/library/argparse.html).
 
-- [Packing and unpacking binary data in Python](https://docs.python.org/3/library/struct.html).
+- [Packing and unpacking binary data in Python](https://docs.python.org/3.12/library/struct.html).
 
-- [Convert an integer into binary](https://docs.python.org/3/library/stdtypes.html#int.to_bytes).
+- [Convert an integer into binary](https://docs.python.org/3.12/library/stdtypes.html#int.to_bytes).
 
-- [random](https://docs.python.org/3/library/random.html).
+- [random](https://docs.python.org/3.12/library/random.html).
 
-- [Logging HOWTO](https://docs.python.org/3/howto/logging.html) and the [Logging interface](https://docs.python.org/3/library/logging.html).
+- [Logging HOWTO](https://docs.python.org/3.12/howto/logging.html) and the [Logging interface](https://docs.python.org/3.12/library/logging.html).

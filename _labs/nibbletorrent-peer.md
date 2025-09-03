@@ -246,7 +246,7 @@ Here is a diagram showing the general interactions between the different compone
 
 ## Requirements
 
-- You must use Python 3.10 for this lab.
+- You must use Python 3.12 for this lab.
 
 - The only third-party Python library you are allowed to use in this lab is [requests](https://requests.readthedocs.io/en/latest/). That way you don't have to write your own HTTP client. All other third-party libraries are off limits.
 
@@ -304,8 +304,8 @@ To demonstrate this, follow these steps:
 
 - [How to get your private IP address](https://stackoverflow.com/questions/166506/finding-local-ip-addresses-using-pythons-stdlib/)
 
-- [Parsing JSON in Python](https://docs.python.org/3/library/json.html)
+- [Parsing JSON in Python](https://docs.python.org/3.12/library/json.html)
 
-- [Good way of creating a TCP server in Python](https://docs.python.org/3/library/socketserver.html)
+- [Good way of creating a TCP server in Python](https://docs.python.org/3.12/library/socketserver.html)
 
 - [Converting hex strings to bytes](https://stackoverflow.com/questions/5649407/how-to-convert-hexadecimal-string-to-bytes-in-python)

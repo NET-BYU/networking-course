@@ -42,7 +42,7 @@ icon: fas fa-terminal
 ## Python Coding Standard
 
 ### 1. General
-* **1.1** You must use Python 3.10
+* **1.1** You must use Python 3.12
 
 * **1.2** Your code, when submitted, must be in a finished form. You must not have any commented out lines of code.
 
