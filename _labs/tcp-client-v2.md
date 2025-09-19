@@ -74,6 +74,12 @@ Here is an [input file]({% link _labs/input.txt %}) to get you started. You will
 cat input.txt | ./tcp_client -
 ```
 
+or 
+
+```
+curl https://ecenetworking.byu.edu/426/labs.txt | bin/tcp_client -
+```
+
 You could imagine more interesting ways of chaining commands together. 
 
 ## Objectives
