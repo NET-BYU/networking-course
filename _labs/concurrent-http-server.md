@@ -49,7 +49,7 @@ optional arguments:
 As part of this lab, you will be benchmarking the different approaches to concurrency. To do so, you will be using the [wrk2](https://github.com/giltene/wrk2) tool. It sends a bunch of HTTP requests to your server and measures how long it takes to respond. You will need to build `wrk2` yourself by cloning the [linked repo](https://github.com/giltene/wrk2) and running `make`. After running `make`, a `wrk` executable will be generated. I have verified that it works on the Digital and Embedded Lab computers. You will benchmark the performance of your old lab that was single threaded vs. the threaded version vs. the thread-pool version vs. the select version. Record the results in `benchmark.md` of your repository. For consistency, record the results of your benchmark using this configuration:
 
 ```
-./wrk -t10 -c10 -d30s -R10000 http://127.0.0.1:8084/page.html
+./wrk -t10 -c10 -d30s -R10000 http://127.0.0.1:8085/page.html
 ```
 
 Run the benchmark **3 or more times** and report the best run. You should turn off verbose output when running your benchmarks. You are welcome to play around with different configurations, but for the results you report, make sure to use this configuration. Here is an [example]({% link assets/benchmark.md %}) of what the benchmark.md file should look like.
