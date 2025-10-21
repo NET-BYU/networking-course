@@ -52,6 +52,11 @@ As part of this lab, you will be benchmarking the different approaches to concur
 ./wrk -t10 -c10 -d30s -R10000 http://127.0.0.1:8085/page.html
 ```
 
+With your server run as
+```
+python3 http_server.py -f ./www -c <concurrency_method>
+```
+
 Run the benchmark **3 or more times** and report the best run. You should turn off verbose output when running your benchmarks. You are welcome to play around with different configurations, but for the results you report, make sure to use this configuration. Here is an [example]({% link assets/benchmark.md %}) of what the benchmark.md file should look like.
 
 ## Objectives
