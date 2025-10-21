@@ -1,36 +1,35 @@
 ## Single Thread
 
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    12.21s     3.40s   18.09s    57.82%
-    Req/Sec     0.02      2.97   394.00     99.99%
-  11888 requests in 30.01s, 14.75MB read
-  Socket errors: connect 0, read 0, write 0, timeout 135
-Requests/sec:    396.11
-Transfer/sec:    503.26KB
+    Latency     6.15ms    3.36ms  22.85ms   67.92%
+    Req/Sec     1.06k    98.77     2.11k    91.11%
+  299938 requests in 30.00s, 372.14MB read
+Requests/sec:   9997.85
+Transfer/sec:     12.40MB
 
 ## Threading
 
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    16.51s     4.64s   25.20s    59.19%
-    Req/Sec   189.60     26.01   235.00     60.00%
-  55029 requests in 30.01s, 68.28MB read
-Requests/sec:   1833.75
-Transfer/sec:      2.28MB
+    Latency    16.51s     4.76s   24.53s    57.02%
+    Req/Sec   181.80      0.40   182.00    100.00%
+  54673 requests in 30.00s, 67.83MB read
+Requests/sec:   1822.19
+Transfer/sec:      2.26MB
 
 ## Thread Pool
 
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    16.37s     4.79s   25.25s    58.69%
-    Req/Sec   164.00     36.90   250.00     70.00%
-  53820 requests in 30.01s, 66.78MB read
-Requests/sec:   1793.59
-Transfer/sec:      2.23MB
+    Latency    12.57s     3.80s   19.23s    57.88%
+    Req/Sec   337.90      2.34   342.00     80.00%
+  108275 requests in 30.00s, 134.34MB read
+Requests/sec:   3609.16
+Transfer/sec:      4.48MB
 
-## Async
+## Select
 
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     1.17ms  399.66us   4.91ms   69.05%
-    Req/Sec     1.05k    70.34     1.33k    91.52%
-  299994 requests in 30.00s, 372.21MB read
-Requests/sec:   9999.91
+    Latency     1.13ms    1.09ms  11.86ms   93.91%
+    Req/Sec     1.06k   106.15     1.78k    87.16%
+  300000 requests in 30.00s, 372.22MB read
+Requests/sec:   9999.94
 Transfer/sec:     12.41MB
