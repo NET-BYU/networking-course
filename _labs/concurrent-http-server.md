@@ -31,7 +31,7 @@ Assuming you did the previous lab correctly, you shouldn't have to change any of
 To control whether you are using processes or threads, we need to modify the CLI of your program. Add a new flag option, called `-c`/`--concurrency`. It takes a string which controls which concurrency technique you are using. The complete CLI will look like
 
 ```
-usage: http_server.py [-h] [-p PORT] [-v] [-d] [-f FOLDER] [-c {thread,thread-pool,async}]
+usage: http_server.py [-h] [-p PORT] [-v] [-d] [-f FOLDER] [-c {thread,thread-pool,select}]
 
 optional arguments:
   -h, --help            show this help message and exit
