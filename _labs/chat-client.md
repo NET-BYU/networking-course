@@ -15,15 +15,15 @@ Use the GitHub Classroom link posted in the Teams channel for the lab to accept 
 
 ## Historical Time Spent on Lab
 
-???
+N/A
 
 ## Overview
 
 For this lab, you will be writing a chat client using [MQTT](https://mqtt.org) in Python. Your chat client will need to be able to chat with other students through the MQTT broker. There are two parts to this lab, the "protocol" (how to format the payload) and the user interface.
 
-MQTT is a different type of application layer protocol from what you have seen in the past. It will be worth your time to understand how it works before you dive into implementing a client. We discussed it in lecture, but it is worth reading some [articles](https://www.hivemq.com/blog/how-to-get-started-with-mqtt/) and/or watching some [videos](https://youtu.be/LKz1jYngpcU). It is a fairly complex protocol when you get into the details of how it works.
+MQTT is a different type of application layer protocol from what you have seen in the past. It will be worth your time to understand how it works before you dive into implementing a client. We discussed it in lecture, but reading some [articles](https://www.hivemq.com/blog/how-to-get-started-with-mqtt/) and/or watching some [videos](https://youtu.be/LKz1jYngpcU) will help you understand it better. It is a fairly complex protocol when you get into the details of how it works.
 
-To use MQTT, you need a couple of pieces of information:
+To use MQTT, you need a few pieces of information:
 
 - **Hostname**. This is the hostname of the broker. (In MQTT, they call the server a broker.)
 - **Port number**. This is the port number that the broker is bound to. For MQTT, the standard ports are 1883 and 8883.
@@ -69,14 +69,16 @@ You must publish an "online" message when you start your client and register a [
 
 ### User Interface
 
-This interface will be different from any other lab. Rather than using a command-line interface, you will be building a graphical interface. You have a couple of options for how you want to approach this interface:
+This interface will be different from any other lab. Rather than using a command-line interface, you will be building an interactive interface. You have a couple of options for how you want to approach this interface:
 
-1. I have provided a simple [ncurses](https://en.wikipedia.org/wiki/Ncurses) interface for you to use in the lab. You have to plug in the MQTT code into the interface, and then you are done. This approach is the simplest way to complete the lab.
+1. Build a terminal user interface (TUI). You can use the [ncurses](https://en.wikipedia.org/wiki/Ncurses) library (through the [curses](https://docs.python.org/3/library/curses.html) module in Python) to build a TUI. This approach will allow you to run your chat client in a terminal window. You will need to handle user input, display messages, and update the list of online users. There are many tutorials online for how to use ncurses to build TUIs.
 
-Regardless of which option you choose, you must provide the following usage pattern:
+2. Build a graphical user interface (GUI). You can use a GUI library like [Tkinter](https://docs.python.org/3/library/tkinter.html) (which is included with Python). This approach will allow you to create a more user-friendly interface with buttons, text boxes, and other widgets. There are many tutorials online for how to use Tkinter to build GUIs.
+
+Regardless of which option you choose, you must provide the following usage pattern to start your program:
 
 ```
-Usage: chat [--help] [-v] [-h HOST] [-p PORT] [-n NAME] NETID
+Usage: chat.py [--help] [-v] [-h HOST] [-p PORT] [-n NAME] NETID
 
 Arguments:
  NETID The NetID of the user.
@@ -91,13 +93,13 @@ Options:
 
 If no name is provided, then use NETID as the name.
 
-Here is a demonstration of the chat client:
+<!-- Here is a demonstration of the chat client:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-3XYROryln8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-3XYROryln8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 ## Objectives
 
-- Build something that interfaces with other people's code.
+- Build something that interfaces with third party code.
 
 - Get exposure to integrating with UI code or writing your own UI code.
 
@@ -106,13 +108,13 @@ Here is a demonstration of the chat client:
 
 ## Requirements
 
-- The name of your program must be named `chat`.
+- The name of your program must be named `chat.py`.
 
 - Your program must have the usage pattern provided above and parse all of the options and arguments correctly.
 
 - The default port must be `1883`, and the default hostname must be `localhost`.
 
-- Your client must be able to work with other chat clients.
+- Your client must be able to work with other chat clients. *This might require you to coordinate with other students to make sure they are online when you are testing*.
 
 - Your client must subscribe and publish using QoS of 1.
 
@@ -124,7 +126,10 @@ Here is a demonstration of the chat client:
 
 - Your user interface must show the following information:
   - Messages that have been sent and received. It must include the time the message was sent, the name of the person that sent the message, and the message itself. The timestamp must be human-readable and not in epoch time format.
+
   - Show when people have left or joined the chat server. This can be inline with the chat messages.
+
+  - Show a list of online users.
 
 ## Testing
 
@@ -134,7 +139,7 @@ One good way of testing your chat client is to bring up multiple instances of yo
 
 ## Submission
 
-To submit your code, upload it to Gradescope.
+Since this is using a TUI or a GUI, it is hard to do automated testing. Therefore, you will need to record a short video (1 to 2 minutes) demonstrating your chat client fulfills **all of the requirements**. You will submit this video to Learning Suite.
 
 
 ## Resources
