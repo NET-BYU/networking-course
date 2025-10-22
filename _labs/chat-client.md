@@ -44,7 +44,7 @@ Your chat client will subscribe to two topics: `+/message` and `+/status`. These
 The payload for the `<netid>/message` publications must contain [`json`](https://www.json.org/json-en.html) data with the following keys:
 
 - `timestamp`: The time the message was published, formatted as the [epoch time (or Unix time)](https://en.wikipedia.org/wiki/Unix_time).
-- `name`: The name of the person sending the message. This is optionally provided as an argument to your interface. If no name is provided, you must use your NetID.
+- `name`: The name of the person sending the message.
 - `message`: The message you are sending.
 
 For example, if you are publishing a message, "Hello world" at 8:13:00 AM on Nov 24, 2020, then the payload would be the following:
@@ -55,14 +55,13 @@ For example, if you are publishing a message, "Hello world" at 8:13:00 AM on Nov
 
 The payload for the `<netid>/status` publications must contain `json` data with the following keys:
 
-- `timestamp`: The time the message was published, formatted as the [epoch time (or Unix time)](https://en.wikipedia.org/wiki/Unix_time).
 - `name`: The name of the person sending the message.
 - `online`: An integer showing if the person is online or not. 0 for offline and any other value for online.
 
 For example, to update your status to "online", the payload of the status update would be:
 
 ```json
-{"timestamp": 1606230780, "name": "Dr. Phil", "online": 1}
+{"name": "Dr. Phil", "online": 1}
 ```
 
 You must publish an "online" message when you start your client and register a [last will](https://mntolia.com/mqtt-last-will-testament-explained-with-examples/) with the broker that publishes an "offline" message when you disconnect. To make the status messages more useful, you must set the [retain flag](https://www.hivemq.com/blog/mqtt-essentials-part-8-retained-messages/) for all status message publications.
@@ -71,7 +70,7 @@ You must publish an "online" message when you start your client and register a [
 
 This interface will be different from any other lab. Rather than using a command-line interface, you will be building an interactive interface. You have a couple of options for how you want to approach this interface:
 
-1. Build a terminal user interface (TUI). You can use the [ncurses](https://en.wikipedia.org/wiki/Ncurses) library (through the [curses](https://docs.python.org/3/library/curses.html) module in Python) to build a TUI. This approach will allow you to run your chat client in a terminal window. You will need to handle user input, display messages, and update the list of online users. There are many tutorials online for how to use ncurses to build TUIs.
+1. Build a terminal user interface (TUI). You can use the [ncurses](https://en.wikipedia.org/wiki/Ncurses) library (through the [curses](https://docs.python.org/3/library/curses.html) module in Python) to build a TUI. However, in my opinion, ncurses is a outdated and there are better TUI tools, such as [Texual](https://textual.textualize.io/getting_started/). This approach will allow you to run your chat client in a terminal window. You will need to handle user input, display messages, and update the list of online users. There are many tutorials online for how to use ncurses to build TUIs.
 
 2. Build a graphical user interface (GUI). You can use a GUI library like [Tkinter](https://docs.python.org/3/library/tkinter.html) (which is included with Python). This approach will allow you to create a more user-friendly interface with buttons, text boxes, and other widgets. There are many tutorials online for how to use Tkinter to build GUIs.
 
@@ -112,6 +111,10 @@ If no name is provided, then use NETID as the name.
 
 - Your program must have the usage pattern provided above and parse all of the options and arguments correctly.
 
+- You are allowed to use the following third-party Python libraries. All other third-party libraries are off limits.
+  - [Paho MQTT Client library](https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php)
+  - [Texual](https://textual.textualize.io/getting_started/) *(if you are building a TUI)*
+
 - The default port must be `1883`, and the default hostname must be `localhost`.
 
 - Your client must be able to work with other chat clients. *This might require you to coordinate with other students to make sure they are online when you are testing*.
@@ -129,8 +132,6 @@ If no name is provided, then use NETID as the name.
 
   - Show when people have left or joined the chat server. This can be inline with the chat messages.
 
-  - Show a list of online users.
-
 ## Testing
 
 The chat server will be hosted at lundrigan.byu.edu:1883.
@@ -144,8 +145,12 @@ Since this is using a TUI or a GUI, it is hard to do automated testing. Therefor
 
 ## Resources
 
-- [Converting epoch time to human-readable time](https://www.epochconverter.com/programming/c)
+- 
 
-- [Time string formatting](http://www.cplusplus.com/reference/ctime/strftime/)
+- [Paho MQTT Python client](https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php)
 
-- [Ncurses documentation](https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html)
+- [Paho MQTT Python client publication example](https://github.com/eclipse/paho.mqtt.python/blob/master/examples/client_pub-wait.py)
+
+- [Paho MQTT Python client subscription example](https://github.com/eclipse/paho.mqtt.python/blob/master/examples/client_sub.py)
+
+- [Python logging](https://realpython.com/python-logging/)
