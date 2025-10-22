@@ -2,7 +2,7 @@
 layout: lab
 toc: true
 title: Chat Client
-number: 8
+number: 7
 ---
 
 > Programs must be written for people to read, and only incidentally for machines to execute.
@@ -145,12 +145,10 @@ Since this is using a TUI or a GUI, it is hard to do automated testing. Therefor
 
 ## Resources
 
-- 
+- [Textual tutorial](https://textual.textualize.io/tutorial/)
 
-- [Paho MQTT Python client](https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php)
+- [Paho MQTT Python documentation](https://eclipse.dev/paho/files/paho.mqtt.python/html/index.html)
 
 - [Paho MQTT Python client publication example](https://github.com/eclipse/paho.mqtt.python/blob/master/examples/client_pub-wait.py)
 
 - [Paho MQTT Python client subscription example](https://github.com/eclipse/paho.mqtt.python/blob/master/examples/client_sub.py)
-
-- [Python logging](https://realpython.com/python-logging/)
