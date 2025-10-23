@@ -132,6 +132,20 @@ If no name is provided, then use NETID as the name.
 
   - Show when people have left or joined the chat server. This can be inline with the chat messages.
 
+## Installing Python Libraries
+To install the Paho MQTT Client library and Textual library, you will need to create a [virtual environment](https://docs.python.org/3/library/venv.html). A virtual environment allows you to install Python libraries without needing administrator privileges and without interfering with other Python projects you might have on your computer.
+
+Here is how you do it:
+
+```bash
+cd path/to/your/project/folder
+python3 -m venv .venv         # Create a virtual environment in the .venv folder
+source .venv/bin/activate     # Activate the virtual environment
+pip install paho-mqtt textual # Install the required libraries
+```
+
+Every time you want to work on your project, you will need to activate the virtual environment by running `source .venv/bin/activate` in your project folder.
+
 ## Testing
 
 The chat server will be hosted at lundrigan.byu.edu:1883.
