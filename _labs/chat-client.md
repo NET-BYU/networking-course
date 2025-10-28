@@ -92,9 +92,9 @@ Options:
 
 If no name is provided, then use NETID as the name.
 
-<!-- Here is a demonstration of the chat client:
+Here is a demonstration of the chat client:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-3XYROryln8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QMcLxLU1xxo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Objectives
 
