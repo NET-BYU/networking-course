@@ -112,7 +112,7 @@ To submit your code, upload it to Gradescope.
 
 - [HTTP Specification](https://tools.ietf.org/html/rfc7230)
 
-- [HTTP Wikipedia Article](https://en.wikipedia.org/wiki/HTTP#HTTP/1.1_response_messages)
+- [HTTP Wikipedia Article](https://en.wikipedia.org/wiki/HTTP#Response)
 
 - [How to get file size in Python?](https://www.geeksforgeeks.org/how-to-get-file-size-in-python/)
 
