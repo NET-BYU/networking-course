@@ -148,7 +148,7 @@ Every time you want to work on your project, you will need to activate the virtu
 
 ## Testing
 
-The chat server will be hosted at lundrigan.byu.edu:1883.
+The chat server will be hosted at ecen426.byu.edu:1883.
 
 One good way of testing your chat client is to bring up multiple instances of your client. That way, you can see how it responds to people coming online and offline.
 
