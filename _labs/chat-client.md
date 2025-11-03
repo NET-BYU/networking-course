@@ -154,7 +154,24 @@ One good way of testing your chat client is to bring up multiple instances of yo
 
 ## Submission
 
-Since this is using a TUI or a GUI, it is hard to do automated testing. Therefore, you will need to record a short video (1 to 2 minutes) demonstrating your chat client fulfills **all of the requirements**. You will submit this video to Learning Suite.
+Since this is using a TUI or a GUI, it is hard to do automated testing. Therefore, you will need to record a short video demonstrating your chat client fulfills **all of the requirements below**. You will need to show me your source code and your lab functioning to get all the points. You will submit this video and your source code on Teams, through a private message.
+
+Here is the grading rubric for this lab:
+
+| Requirement                                                          | Points |
+| -------------------------------------------------------------------- | ------ |
+| Program is named `chat.py`                                           | 1      |
+| Usage pattern is correct                                             | 1      |
+| Publishes and subscribes with QoS of 1                               | 1      |
+| Publishes "online" status on connect                                 | 2      |
+| Registers last will to publish "offline" status                      | 2      |
+| Status messages set retain flag                                      | 2      |
+| Client ID has randomness                                             | 2      |
+| User interface shows sent and received messages                      | 5      |
+| User interface shows people joining/leaving chat                     | 5      |
+| Multiple instances of client work correctly with the same netID/name | 5      |
+| Client works with other students' chat clients                       | 5      |
+| **Total**                                                            | **31** |
 
 
 ## Resources
