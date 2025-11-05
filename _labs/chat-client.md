@@ -112,7 +112,7 @@ Here is a demonstration of the chat client:
 - Your program must have the usage pattern provided above and parse all of the options and arguments correctly.
 
 - You are allowed to use the following third-party Python libraries. All other third-party libraries are off limits.
-  - [Paho MQTT Client library](https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php)
+  - [Paho MQTT Client library](https://eclipse.dev/paho/files/paho.mqtt.python/html/index.html)
   - [Texual](https://textual.textualize.io/getting_started/) *(if you are building a TUI)*
 
 - The default port must be `1883`, and the default hostname must be `localhost`.
