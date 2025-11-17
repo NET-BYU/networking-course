@@ -147,7 +147,7 @@ optional arguments:
 
 - The default port must be `8087`, and the default hostname must be `localhost`.
 
-- Your application must print the response to `stdout`. All other class norms must be followed (e.g., print errors to `stderr`, correct return codes, etc.).
+- Your application must print the response to `stdout` if `-` is provided as the file name. All other class norms must be followed (e.g., print errors to `stderr`, correct return codes, etc.).
 
 - You must be able to download and display the image the server sends to you.
 
