@@ -283,6 +283,7 @@ To pass off this lab, you will need to demonstrate to me or the TA that your pee
 1. Contact the tracker (1 point)
 2. Download a file correctly (1 point) from multiple peers *at once* (1 point)
 3. Upload a file to other peers (1 point), including yourself (1 point)
+4. Demonstrate understanding of your code (1 point)
 
 To demonstrate this, follow these steps:
 
@@ -291,6 +292,8 @@ To demonstrate this, follow these steps:
 2. Start a second peer in another terminal (changing your ID, saving the file to a different location, and running on a different port) and download the same file. Make sure to print out log messages that show what peer you are downloading a piece from and what peer you are uploading a piece to. Verify that the file has been downloaded correctly by the second peer.
 
 3. Stop your second peer, and then using the command line option, limit the peers you download from to only your first peer and restart your second peer. This will verify that you can download the whole file from your first peer. Verify that the file has been downloaded correctly.
+
+At the end, I will ask you questions about your code, how you implemented it, and why you implemented it in that way. You must demonstrate to me that you **understand** your code and your design decisions.
 
 ## Resources
 
