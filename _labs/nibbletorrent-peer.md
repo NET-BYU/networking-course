@@ -132,7 +132,7 @@ Peers need to communicate with each other to request parts of a file. For this c
 
 - **Version**: This field is 8 bits and will always be `0x01`. This allows clients to support future versions of the protocol where the format might be different.
 
-- **Type**: This field is 8 bits and describes the type of request/response that the peer is making. There are 4 different types: hello request (0x01), hello response (0x02), piece request (0x03), piece response (0x04), and error response (0x05).
+- **Type**: This field is 8 bits and describes the type of request/response that the peer is making. There are 5 different types: hello request (0x01), hello response (0x02), piece request (0x03), piece response (0x04), and error response (0x05).
 
 - **Length**: The length of the data field in bytes. This field is 16 bits which means the data field is limited to 65,536 bytes.
 
