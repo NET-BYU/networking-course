@@ -89,7 +89,7 @@ When you make this request with a valid peer ID, IP address, port, and torrent I
 
 - `interval`: The interval (in seconds) that you must send a request to the tracker in order to be considered a peer.
 
-- `peers`: A list of all peers that are seeding the torrent. Each item in the list is a pair of items, with the IP address of the peer and the first item and the client ID of the peer as the second item.
+- `peers`: A list of all peers that are seeding the torrent. Each item in the list is a pair of items, with the IP address of the peer and the first item and the peer ID of the peer as the second item.
 
 An example of the payload the tracker return:
 
@@ -194,7 +194,7 @@ To facilitate the protocol, your peer will need the following pieces of informat
 
 - Torrent file. This specifies what file you want to download and information about the tracker for that file.
   
-- Your NetID. Based on your NetID, your client ID will be generated.
+- Your NetID. Based on your NetID, your peer ID will be generated.
   
 - The folder that you want to download the file to. For simplicity, this will also be the folder where you upload data from when you are seeding.
 
@@ -271,9 +271,9 @@ Here is a diagram showing the general interactions between the different compone
 
 This is a big program, but you can make testing easier by breaking it into smaller chunks. Feel free to add additional commandline options that let you test specific components of your lab. For example, first test the download component, then independently test the upload part. Finally test all of the parts together.
 
-The tracker provides the the IP address and client ID of each peer. It is a requirement for your lab to work with other people's peers, but you can temporarily restrict which peers you connect with for testing purposes.
+The tracker provides the the IP address and peer ID of each peer. It is a requirement for your lab to work with other people's peers, but you can temporarily restrict which peers you connect with for testing purposes.
 
-I will provide a few peers that will upload and download. Their client IDs will be `-ECEN426-bot*`, where `*` can be zero or more characters.
+I will provide a few peers that will upload and download. Their peer IDs will be `-ECEN426-bot*`, where `*` can be zero or more characters.
 
 
 ## Submission
