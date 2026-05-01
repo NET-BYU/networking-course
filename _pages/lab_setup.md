@@ -25,7 +25,7 @@ If you are working on the labs remotely (SSHing into a computer), I *strongly* r
 
 A theme in this class will be setting up your environment so that it matches your preferences, making your life easier. This is true with your terminal app—set it up so that it brings you joy (as much as a terminal app can) and works with your habits. 
 
-My highly opinionated set up involves using [zsh](https://en.wikipedia.org/wiki/Z_shell), [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh), and [Powerlevel10k](https://github.com/romkatv/powerlevel10k). If you would like read more about my setup, you can go [here](https://byunetlab.notion.site/Phil-s-Computer-Setup-0722e33e22e74460aa53f58d5f2babb8).
+My highly opinionated set up involves using [zsh](https://en.wikipedia.org/wiki/Z_shell), [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh), and [Powerlevel10k](https://github.com/romkatv/powerlevel10k). If you would like to read more about my setup, you can go [here](https://byunetlab.notion.site/Phil-s-Computer-Setup-0722e33e22e74460aa53f58d5f2babb8).
 
 ## Git Repositories
 

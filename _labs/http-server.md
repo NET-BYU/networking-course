@@ -18,7 +18,7 @@ Use the GitHub Classroom link posted in the Teams channel for the lab to accept 
 
 ## Overview
 
-Now that you have written TCP client and a TCP server, it is time to graduate to a real protocol: HTTP! As you know, HTTP is just a text-based protocol that runs on top of TCP. The previous lab built the groundwork for your HTTP server. Now instead of parsing my made-up protocol, you will be parsing HTTP. Your HTTP server will support `GET` requests. When your server receives a `GET` request, it will determine the file that is being requested and return it. By the end of this lab, your server should be able to host a full website on it.
+Now that you have written a TCP client and a TCP server, it is time to graduate to a real protocol: HTTP! As you know, HTTP is just a text-based protocol that runs on top of TCP. The previous lab built the groundwork for your HTTP server. Now instead of parsing my made-up protocol, you will be parsing HTTP. Your HTTP server will support `GET` requests. When your server receives a `GET` request, it will determine the file that is being requested and return it. By the end of this lab, your server should be able to host a full website on it.
 
 There are two parts to this project, the HTTP parsing and CLI.
 
@@ -74,7 +74,7 @@ optional arguments:
 
 - The default folder must be `.`.
 
-- When the delay option is set, your server must wait 5 second after receiving an HTTP request before sending a response.
+- When the delay option is set, your server must wait 5 seconds after receiving an HTTP request before sending a response.
 
 - Your server must be able to *parse all request types* (`GET`, `POST`, `PUT`, etc.); however, you only need to service `GET` requests. If a request type other than `GET` is received, you must return a `405 Method Not Allowed` response. 
 

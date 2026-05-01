@@ -20,7 +20,7 @@ Use the GitHub Classroom link posted in the Teams channel for the lab to accept 
 
 For this lab, you will be building off what you did in the previous lab. You will want to use your previous code as a starting point. We will be using the same protocol, but with a minor adjustment. The `Config` `struct` and `tcp_client.h` file have been modified to reflect these changes, so make sure to review these changes.
 
-This lab adds [pipelining](https://en.wikipedia.org/wiki/Pipeline_(computing)) to our protocol. In this context, pipelining is sending multiple requests in one TCP connection. In the previous lab, if you wanted to send multiple requests, you had to start a TCP connect for each request. This can be quite time consuming because of [TCP's three-way handshake](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Connection_establishment). Rather than starting a new TCP connection for each request, we can reuse the TCP socket and send multiple requests. To accommodate pipelining, both your command-line tool and our protocol will need to change. 
+This lab adds [pipelining](https://en.wikipedia.org/wiki/Pipeline_(computing)) to our protocol. In this context, pipelining is sending multiple requests in one TCP connection. In the previous lab, if you wanted to send multiple requests, you had to start a TCP connection for each request. This can be quite time consuming because of [TCP's three-way handshake](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Connection_establishment). Rather than starting a new TCP connection for each request, we can reuse the TCP socket and send multiple requests. To accommodate pipelining, both your command-line tool and our protocol will need to change. 
 
 ### Protocol
 
@@ -36,7 +36,7 @@ The response from the server would be
 11 dlroW olleH
 ```
 
-There is no special characters between responses. You will need to figure out when the first message ends, and the next one begins. For example, if your client sent two pipelined commands,
+There are no special characters between responses. You will need to figure out when the first message ends, and the next one begins. For example, if your client sent two pipelined commands,
 
 ```
 reverse 11 Hello World
@@ -68,7 +68,7 @@ shuffle banana
 random GO BYU!
 ```
 
-Here is an [input file]({% link _labs/input.txt %}) to get you started. You will want to create your own to test out various aspects of your program. We will also be adding the ability to read from `stdin` if "-" is provided as the file name. This is a common paradigm for command-line tools and allows for easily pipelining of tools. For example, you could run the following:
+Here is an [input file]({% link _labs/input.txt %}) to get you started. You will want to create your own to test out various aspects of your program. We will also be adding the ability to read from `stdin` if "-" is provided as the file name. This is a common paradigm for command-line tools and allows for easy pipelining of tools. For example, you could run the following:
 
 ```
 cat input.txt | ./tcp_client -

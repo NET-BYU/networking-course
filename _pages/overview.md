@@ -32,7 +32,7 @@ This is a networking class, so the major goal is to get you familiar with **netw
 
 - **Come to class**. A lot of good information and context is shared in class. Since I post the slides, you will be tempted to think that you don’t need to come. I promise—you do.
 
-- **Take notes**. If you are going to be in class, take notes. Better yet, write out your notes. Taking notes will help you retain information from lecture and give you something personalize to refer to when you are doing the homework and studying for tests.
+- **Take notes**. If you are going to be in class, take notes. Better yet, write out your notes. Taking notes will help you retain information from lecture and give you something personal to refer to when you are doing the homework and studying for tests.
 
 - **Start the labs early**. The labs are the hardest part of the class. They are designed to be challenging and to stretch you. If you start them early, you will have time to ask questions and get help.
 
@@ -81,7 +81,7 @@ Rules regarding the inappropriate use of AI in EC EN and IT&C coursework
 
 - AI should never be used when an instructor explicitly asks students not to use it.
 
-- AI should not be used in any cases where an exam or assignment is “closed book” (i.e., they prohibit the use of resources such textbooks, the Internet, talking to others, etc.).
+- AI should not be used in any cases where an exam or assignment is “closed book” (i.e., they prohibit the use of resources such as textbooks, the Internet, talking to others, etc.).
 
 - When using AI for written work that is “open book” (e.g., papers, coding projects, lab reports, take-home exams), any AI content should be cited. For example, if you use AI-generated language it should be put into quotes and the AI engine and text prompt should be listed. If you are paraphrasing AI-generated content, then you should indicate that you are paraphrasing in a citation, similar to how you would if you were paraphrasing another published resource. If you are using an AI code-generation tool that recommends code blocks, then a code comment should be added that clarifies the significant portions of the code were AI-generated.
 

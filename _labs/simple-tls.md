@@ -106,7 +106,7 @@ To get the data sent by the server, the client must first decrypt the data using
 - Data chunk: variable bytes
 - MAC: 32 bytes
 
-After you pull apart the decrypted payload, verify the sequence number, calculate the MAC on the data chunk using the server's data integrity key, and finally compare the MAC with the MAC sent from the server. If the sequence number and MAC are correct, then the data chunk can be used. The server will continue to send data messages until it has sent a complete file, then it will close the socket. Warning: an advisory will occasionally change the encrypted data or replay data, so you must check the sequence number and verify the MAC.
+After you pull apart the decrypted payload, verify the sequence number, calculate the MAC on the data chunk using the server's data integrity key, and finally compare the MAC with the MAC sent from the server. If the sequence number and MAC are correct, then the data chunk can be used. The server will continue to send data messages until it has sent a complete file, then it will close the socket. Warning: an adversary will occasionally change the encrypted data or replay data, so you must check the sequence number and verify the MAC.
 
 If you have made it this far, save the data to a file with a `.png` extension. If you can correctly view the image you received, you have successfully completed the protocol portion of the lab!
 
