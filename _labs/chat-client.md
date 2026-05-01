@@ -70,7 +70,7 @@ You must publish an "online" message when you start your client and register a [
 
 This interface will be different from any other lab. Rather than using a command-line interface, you will be building an interactive interface. You have a couple of options for how you want to approach this interface:
 
-1. Build a terminal user interface (TUI). You can use the [ncurses](https://en.wikipedia.org/wiki/Ncurses) library (through the [curses](https://docs.python.org/3/library/curses.html) module in Python) to build a TUI. However, in my opinion, ncurses is a outdated and there are better TUI tools, such as [Texual](https://textual.textualize.io/getting_started/). This approach will allow you to run your chat client in a terminal window. You will need to handle user input, display messages, and update the list of online users. There are many tutorials online for how to use ncurses to build TUIs.
+1. Build a terminal user interface (TUI). You can use the [ncurses](https://en.wikipedia.org/wiki/Ncurses) library (through the [curses](https://docs.python.org/3/library/curses.html) module in Python) to build a TUI. However, in my opinion, ncurses is outdated and there are better TUI tools, such as [Textual](https://textual.textualize.io/getting_started/). This approach will allow you to run your chat client in a terminal window. You will need to handle user input, display messages, and update the list of online users. There are many tutorials online for how to use ncurses to build TUIs.
 
 2. Build a graphical user interface (GUI). You can use a GUI library like [Tkinter](https://docs.python.org/3/library/tkinter.html) (which is included with Python). This approach will allow you to create a more user-friendly interface with buttons, text boxes, and other widgets. There are many tutorials online for how to use Tkinter to build GUIs.
 
@@ -113,7 +113,7 @@ Here is a demonstration of the chat client:
 
 - You are allowed to use the following third-party Python libraries. All other third-party libraries are off limits.
   - [Paho MQTT Client library](https://eclipse.dev/paho/files/paho.mqtt.python/html/index.html)
-  - [Texual](https://textual.textualize.io/getting_started/) *(if you are building a TUI)*
+  - [Textual](https://textual.textualize.io/getting_started/) *(if you are building a TUI)*
 
 - The default port must be `1883`, and the default hostname must be `localhost`.
 

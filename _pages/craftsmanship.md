@@ -22,7 +22,7 @@ First and foremost, these meetings should be done in a spirit of love and accept
 
 Your meetings should go something like this. Someone will display their code for the lab. They will talk about the general approach they took to solving the lab. They will describe roughly each block of code and its intended purpose. Others will ask questions, such as why did you do it this way? If someone implemented the lab differently, you could discuss the different methods. This discussion is an opportunity to learn from others and hear other's viewpoints. These meetings should range from 30 minutes to 1 hour.
 
-As you show your code or view someone else code, here are some things you might want to discuss:
+As you show your code or view someone else's code, here are some things you might want to discuss:
 
 - What was challenging about the lab, and what did you do to deal with this challenge?
 

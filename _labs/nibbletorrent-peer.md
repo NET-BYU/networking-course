@@ -72,7 +72,7 @@ The torrent files you will be working with are located [here]({% link assets/tor
 
 After you have parsed the torrent file, you must make a request to the `tracker_url` to get a list of peers to download the file from. The tracker uses HTTP and parameters are passed using [query strings](https://en.wikipedia.org/wiki/Query_string). You must pass the following parameters:
 
-- `peer_id`: This is an ID that uniquely identifies yourself. It needs to following this format: `-ECEN426-<NetID>`. For example, a peer ID would look like `-ECEN426-le0nh4rt`.
+- `peer_id`: This is an ID that uniquely identifies yourself. It needs to follow this format: `-ECEN426-<NetID>`. For example, a peer ID would look like `-ECEN426-le0nh4rt`.
 
 - `ip`: The IP address you will want to receive peer connection to. Because the tracker will only live on BYU campus, you will want to use your BYU private IP address.
 
@@ -89,9 +89,9 @@ When you make this request with a valid peer ID, IP address, port, and torrent I
 
 - `interval`: The interval (in seconds) that you must send a request to the tracker in order to be considered a peer.
 
-- `peers`: A list of all peers that are seeding the torrent. Each item in the list is a pair of items, with the IP address of the peer and the first item and the peer ID of the peer as the second item.
+- `peers`: A list of all peers that are seeding the torrent. Each item in the list is a pair of items, with the IP address of the peer as the first item and the peer ID of the peer as the second item.
 
-An example of the payload the tracker return:
+An example of the payload the tracker returns:
 
 ```json
 {
@@ -113,7 +113,7 @@ Now that you have a list of peers, you are ready to make a connection with them 
    
 3. Request pieces of the file from the peer.
 
-You need to be able to support up to **5 concurrent connections with different peers**, requesting different parts of of the file.
+You need to be able to support up to **5 concurrent connections with different peers**, requesting different parts of the file.
 
 #### NibbleTorrent Request/Response Format
 
@@ -156,7 +156,7 @@ After you connected to a peer, you will send them a hello request, with the type
 
 The peer will respond with a hello response (`0x02`) and list all of the pieces it has of the file, formatted as a [bitfield](https://wiki.theory.org/BitTorrentSpecification#bitfield:_.3Clen.3D0001.2BX.3E.3Cid.3D5.3E.3Cbitfield.3E). A bitfield allows a peer to efficiently encode what pieces it already has. A bitfield is like an array of booleans, where the index in the array corresponds to a piece of the file, and the value tells you if they have the piece or not. For example, if a file consisted of 4 pieces and a peer only had pieces 1 and 3, then its bitfield would be `b1010`. The first bit from the left (MSB) represents the first piece. If it had only the last piece of the file, then the bitfield would be `b0001`. 
 
-If a bitfield is not an whole number of bytes, then pad the bitfield with zeros. Using the previous example (torrent ID `0800428c333c811ea3b6f7a0f01ee31c4ba75f85`, which only has 42 pieces) and assuming the peer has all of the pieces of the file, then the response would look like (in binary format):
+If a bitfield is not a whole number of bytes, then pad the bitfield with zeros. Using the previous example (torrent ID `0800428c333c811ea3b6f7a0f01ee31c4ba75f85`, which only has 42 pieces) and assuming the peer has all of the pieces of the file, then the response would look like (in binary format):
 
 ```
 111111111111111111111111111111111111111111000000
@@ -271,7 +271,7 @@ Here is a diagram showing the general interactions between the different compone
 
 This is a big program, but you can make testing easier by breaking it into smaller chunks. Feel free to add additional commandline options that let you test specific components of your lab. For example, first test the download component, then independently test the upload part. Finally test all of the parts together.
 
-The tracker provides the the IP address and peer ID of each peer. It is a requirement for your lab to work with other people's peers, but you can temporarily restrict which peers you connect with for testing purposes.
+The tracker provides the IP address and peer ID of each peer. It is a requirement for your lab to work with other people's peers, but you can temporarily restrict which peers you connect with for testing purposes.
 
 I will provide a few peers that will upload and download. Their peer IDs will be `-ECEN426-bot*`, where `*` can be zero or more characters.
 

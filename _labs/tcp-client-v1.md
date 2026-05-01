@@ -53,7 +53,7 @@ To make this lab easier, you can assume the following:
 
 - Your application does not need to handle more than 1024 bytes of input.
 
-For all labs, you have the option of using a simple logging library, [log.c](https://github.com/rxi/log.c). I highly recommend you get familiar with it and use it. It does a lot of things for you and will save you time. If you do use it (and really you should), take care to provide the right log level output for messages (e.g., `log_debug`, `log_info`, `log_warn`). This will save you trouble when later when you are hunting down a bug. In my opinion, good logging messages is the key to good debugging.
+For all labs, you have the option of using a simple logging library, [log.c](https://github.com/rxi/log.c). I highly recommend you get familiar with it and use it. It does a lot of things for you and will save you time. If you do use it (and really you should), take care to provide the right log level output for messages (e.g., `log_debug`, `log_info`, `log_warn`). This will save you trouble later when you are hunting down a bug. In my opinion, good logging messages are the key to good debugging.
 
 ## Objectives
 
@@ -109,7 +109,7 @@ nc -l 8080
 
 You can have your client connect to the server and see what is being received. You can also type a message into `netcat` as a response to your client.
 
-I will also be running a TCP server at `ecen426.byu.edu:8080`. This server is only accessible on campus (for security purposes). If you are off-campus, you will need to VPN or use [SSH port forwarding](https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding) to test against it. Using the College's VPN is the easier approach. If for some reason you can't use the VPN, here is a video demonstrating how to using port forwarding to test out lab 1:
+I will also be running a TCP server at `ecen426.byu.edu:8080`. This server is only accessible on campus (for security purposes). If you are off-campus, you will need to VPN or use [SSH port forwarding](https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding) to test against it. Using the College's VPN is the easier approach. If for some reason you can't use the VPN, here is a video demonstrating how to use port forwarding to test out lab 1:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Kfmsi_WCd74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
